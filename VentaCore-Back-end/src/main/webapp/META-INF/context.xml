@@ -1,0 +1,6 @@
+<Context>
+    <Resource name="jdbc/ventaCore" auth="Container" type="javax.sql.DataSource"
+              maxTotal="20" maxIdle="18" maxWaitMillis="-1"
+              username="root" password="Ijse@1234" driverClassName="com.mysql.cj.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/ventaCore?createDatabaseIfNotExist=true"/>
+</Context>

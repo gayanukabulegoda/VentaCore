@@ -1,0 +1,375 @@
+/* Reset and Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: linear-gradient(135deg, #9C27B0, #6D1F6C);
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure header is above other content */
+}
+
+section {
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  margin-top: 3.3rem; /* Adjust based on header height */
+  height: calc(100vh - 4rem); /* Adjust based on header height */
+}
+
+.sidebar {
+  width: 150px;
+  background: linear-gradient(135deg, #7B1FA2, #5C0F6F);
+  color: #fff;
+  padding: 1rem;
+  height: calc(100vh - 4rem); /* Adjust based on header height */
+  position: fixed;
+  top: 3.3rem; /* Adjust based on header height */
+  left: 0;
+  overflow-y: auto;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar li {
+  margin: 1rem 0 1rem 0;
+  padding: 10px 0;
+}
+
+.sidebar .nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+  padding: 10px 20px 10px 15px;
+}
+
+.sidebar .nav-link:hover {
+  background: linear-gradient(135deg, #9C27B0, #6D1F6C);
+  border-radius: 5px;
+  padding: 10px 20px 10px 15px;
+}
+
+.main-content {
+  width: calc(100% - 150px); /* Adjust based on sidebar width */
+  height: 95%;
+  flex: 1;
+  padding: 1rem;
+  background: linear-gradient(135deg, #ffffff, #f5f5f5);
+  margin-left: 150px; /* Adjust based on sidebar width */
+  overflow-y: auto;
+}
+
+#homePage {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 89%;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ffffff, #e0e0e0);
+}
+
+.carousel-inner {
+  display: flex;
+}
+
+.carousel-item {
+  min-width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.carousel img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+  border: none;
+  color: #fff;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+.title {
+  color: #9C27B0;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+form {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+  margin-bottom: 1rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.buttons button {
+  background: linear-gradient(135deg, #9C27B0, #6D1F6C);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+  background: linear-gradient(135deg, #7B1FA2, #5C0F6F);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table th, table td {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+table th {
+  background: linear-gradient(135deg, #9C27B0, #6D1F6C);
+  color: #fff;
+}
+
+footer {
+  background: linear-gradient(135deg, #9C27B0, #6D1F6C);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Order Management Section */
+#OrderManage {
+  padding: 1rem;
+  background-color: #f5f5f5;background: linear-gradient(135deg, #ffffff, #f5f5f5);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* #OrderManage div {
+  display: flex;
+} */
+
+.includeDetails, .ItemSelect, .TotalCal {
+  background: linear-gradient(135deg, #ffffff, #f5f5f5);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.includeDetails h1, .ItemSelect h1, .TotalCal h1 {
+  color: #9C27B0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.includeDetails div, .ItemSelect div {
+  margin-bottom: 1rem;
+}
+
+.includeDetails form, .ItemSelect form {
+  display: flex;
+  flex-direction: column;
+}
+
+.includeDetails label, .ItemSelect label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.includeDetails input, .ItemSelect input, .ItemSelect select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.ItemSelect .addBtn {
+  background: linear-gradient(135deg, #9C27B0, #6D1F6C);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+.ItemSelect .addBtn:hover {
+  background: linear-gradient(135deg, #7B1FA2, #5C0F6F);
+}
+
+.TotalCal {
+  display: flex;
+  flex-direction: column;
+}
+
+.TotalCal h1, .TotalCal h2 {
+  margin-bottom: 1rem;
+}
+
+.TotalCal input {
+  width: calc(100% - 2rem);
+}
+
+.TotalCal button.placeOrder {
+  background: linear-gradient(135deg, #9C27B0, #6D1F6C);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+.TotalCal button.placeOrder:hover {
+  background: linear-gradient(135deg, #7B1FA2, #5C0F6F);
+}
+
+.mainTable {
+  margin-top: 1rem;
+}
+
+.mainTable .table {
+  background: linear-gradient(135deg, #ffffff, #f5f5f5);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.mainTable .table div {
+  display: flex;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.mainTable .table div div {
+  flex: 1;
+  text-align: center;
+}
+
+.mainTable .tableRows {
+  padding: 0.5rem;
+}
+
+.mainTable .tableRows div {
+  display: flex;
+  padding: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+#OrderManage .mainTable {
+  margin-top: 1rem;
+  overflow: auto;
+}
+
+#OrderManage .mainTable .table {
+  width: 100%;
+  background: linear-gradient(135deg, #ffffff, #f5f5f5);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#OrderManage .mainTable .table div {
+  display: flex;
+  padding: 0.75rem;
+  border-bottom: 1px solid #e0e0e0;
+  align-items: center;
+}
+
+#OrderManage .mainTable .table div div {
+  flex: 1;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+#OrderManage .mainTable .tableRows {
+  background: linear-gradient(135deg, #ffffff, #f5f5f5);
+}
+
+#OrderManage .mainTable .tableRows div {
+  display: flex;
+  padding: 0.75rem;
+  border-bottom: 1px solid #f0f0f0;
+  align-items: center;
+}
+
+#OrderManage .mainTable .tableRows div div {
+  flex: 1;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
