@@ -1,0 +1,3 @@
+00:55:27.000 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.CustomerController - Customer Controller Initialized
+00:59:28.054 [http-nio-8080-exec-1] INFO  l.i.ventacorebackend.db.DbConnection - Initializing DB connection
+00:59:28.510 [http-nio-8080-exec-1] DEBUG l.i.ventacorebackend.db.DbConnection - Connection Initialized: 1949127249, URL=jdbc:mysql://localhost:3306/ventaCore?createDatabaseIfNotExist=true, MySQL Connector/J

@@ -1200,7 +1200,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </schema>
     <schema id="334" parent="1" name="ventaCore">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-08-03.12:25:15</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-08-03.12:29:33</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <user id="335" parent="1" name="debian-sys-maint">

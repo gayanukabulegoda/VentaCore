@@ -5,67 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69a5e4c0-dcad-415d-aa20-38d1b6e16bac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/VentaCore_POS.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/HelloServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/bo/CustomerBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/bo/ItemBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/bo/OrderBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/bo/impl/CustomerBOIMPL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/bo/impl/ItemBOIMPL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/bo/impl/OrderBOIMPL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/controller/ItemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/dao/CustomerDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/dao/ItemDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/dao/OrderDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/dao/impl/CustomerDAOIMPL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/dao/impl/ItemDAOIMPL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/dao/impl/OrderDAOIMPL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/dto/CustomerDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/dto/ItemDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/dto/OrderDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/filter/CORSFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/resources/db.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/webapp/META-INF/context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/ventaCore/bo/CustomerBO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/ventaCore/bo/ItemBO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/ventaCore/bo/OrderBO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/ventaCore/bo/impl/CustomerBOIMPL.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/ventaCore/bo/impl/ItemBOIMPL.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/ventaCore/bo/impl/OrderBOIMPL.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/ventaCore/controller/CustomerController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/ventaCore/controller/ItemController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/ventaCore/controller/OrderController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/ventaCore/dao/CustomerDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/ventaCore/dao/ItemDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/ventaCore/dao/OrderDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/ventaCore/dao/impl/CustomerDAOIMPL.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/ventaCore/dao/impl/ItemDAOIMPL.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/ventaCore/dao/impl/OrderDAOIMPL.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/ventaCore/db.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/ventaCore/dto/CustomerDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/ventaCore/dto/ItemDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/ventaCore/dto/OrderDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/ventaCore/filter/CORSFilter.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/bo/BOFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/bo/SuperBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/dao/DAOFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/dao/SuperDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/dao/custom/impl/CustomerDAOIMPL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/db/DbConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/entity/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/entity/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/entity/OrderItemDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/util/CrudUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/util/SQLUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9442431f-7d4a-4cbe-b9e6-5c22827eb2df.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9442431f-7d4a-4cbe-b9e6-5c22827eb2df.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/bo/CustomerBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/bo/custom/CustomerBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/bo/ItemBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/bo/custom/ItemBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/bo/OrderBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/bo/custom/OrderBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/bo/impl/CustomerBOIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/bo/custom/impl/CustomerBOIMPL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/bo/impl/ItemBOIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/bo/custom/impl/ItemBOIMPL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/bo/impl/OrderBOIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/bo/custom/impl/OrderBOIMPL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/dao/CustomerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/dao/custom/CustomerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/dao/ItemDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/dao/custom/ItemDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/dao/OrderDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/dao/custom/OrderDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/dao/impl/CustomerDAOIMPL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/dao/impl/ItemDAOIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/dao/custom/impl/ItemDAOIMPL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/dao/impl/OrderDAOIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/dao/custom/impl/OrderDAOIMPL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/dto/OrderItemDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/dto/OrderItemDetailDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/filter/CORSFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/filter/CORSFilter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -94,6 +76,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Tomcat Server.Tomcat 10.1.24.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -110,6 +94,101 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="lk.ijse.ventacorebackend.util" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 10.1.24" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.24" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="VentaCore-Back-end:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/ventacore" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="d05a8ebb-c775-408a-a4e7-4549f2708e86" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="40405" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="VentaCore-Back-end:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -127,7 +206,7 @@
       <option name="presentableId" value="Default" />
       <updated>1722680227019</updated>
       <workItem from="1722680228117" duration="651000" />
-      <workItem from="1722681987115" duration="2666000" />
+      <workItem from="1722681987115" duration="12126000" />
     </task>
     <servers />
   </component>
