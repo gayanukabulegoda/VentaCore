@@ -21,7 +21,7 @@ public class CustomerBOIMPL implements CustomerBO {
                 new Customer(
                         dto.getId(),
                         dto.getName(),
-                        dto.getAddress(),
+                        dto.getEmail(),
                         dto.getCity()
                 )
         );
@@ -33,7 +33,7 @@ public class CustomerBOIMPL implements CustomerBO {
         return new CustomerDTO(
                 entity.getId(),
                 entity.getName(),
-                entity.getAddress(),
+                entity.getEmail(),
                 entity.getCity()
         );
     }
@@ -44,7 +44,7 @@ public class CustomerBOIMPL implements CustomerBO {
                 new Customer(
                         dto.getId(),
                         dto.getName(),
-                        dto.getAddress(),
+                        dto.getEmail(),
                         dto.getCity()
                 )
         );
@@ -64,7 +64,7 @@ public class CustomerBOIMPL implements CustomerBO {
                     new CustomerDTO(
                             customer.getId(),
                             customer.getName(),
-                            customer.getAddress(),
+                            customer.getEmail(),
                             customer.getCity()
                     ));
         }

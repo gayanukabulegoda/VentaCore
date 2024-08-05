@@ -94,7 +94,7 @@ public class CustomerController extends HttpServlet {
             if(customerBO.deleteCustomer(customerId)){
                 resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
                 logger.info("Customer Deleted Successfully");
-            }else {
+            } else {
                 writer.write("Customer Delete Failed");
                 resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
                 logger.error("Customer Delete Failed");

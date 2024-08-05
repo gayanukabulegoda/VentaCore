@@ -5,7 +5,7 @@ USE ventaCore;
 CREATE TABLE customer (
                           id VARCHAR(60) PRIMARY KEY,
                           name VARCHAR(60) NOT NULL,
-                          address VARCHAR(110) NOT NULL,
+                          email VARCHAR(110) NOT NULL,
                           city VARCHAR(40) NOT NULL
 );
 

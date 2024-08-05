@@ -15,104 +15,109 @@ document
 
 var custId;
 var custName;
-var custAddress;
-var custSalary;
+var custEmail;
+var custCity;
 
 $("#CustomerManage .saveBtn").click(function () {
   custId = $("#CustomerManage .custId").val();
   custName = $("#CustomerManage .custName").val();
-  custAddress = $("#CustomerManage .custAddress").val();
-  custSalary = $("#CustomerManage .custSalary").val();
+  custEmail = $("#CustomerManage .custEmail").val();
+  custCity = $("#CustomerManage .custCity").val();
 
   let customer = {
-    custId: custId,
-    custName: custName,
-    custAddress: custAddress,
-    custSalary: custSalary,
+    id: custId,
+    name: custName,
+    email: custEmail,
+    city: custCity,
   };
 
-  let validResult = validate(customer);
-
-  if (validResult) {
-    saveCustomer(customer);
-    refresh();
-  }
+  validate(customer)
+    .then((validResult) => {
+      if (validResult) {        
+        saveCustomer(customer, () => {
+          refresh();
+        });
+      }
+    })
+    .catch((error) => {
+      console.error("Validation failed:", error);
+    });
 });
 
 function validate(customer) {
-  let valid = true;
+  return new Promise((resolve, reject) => {
+    let valid = true;
 
-  if (/^C0[0-9]+$/.test(customer.custId)) {
-    $("#CustomerManage .invalidCustId").text("");
-    valid = true;
-  } else {
-    $("#CustomerManage .invalidCustId").text("Invalid Customer Id!");
-    valid = false;
-  }
-
-  if ((/^(?:[A-Z][a-z]*)(?: [A-Z][a-z]*)*$/).test(customer.custName)) {
-    $("#CustomerManage .invalidCustName").text("");
-
-    if (valid) {
+    if (/^C[0-9]+$/.test(customer.id)) {
+      $("#CustomerManage .invalidCustId").text("");
       valid = true;
-    }
-  } else {
-    $("#CustomerManage .invalidCustName").text("Invalid Customer Name!");
-    valid = false;
-  }
+    } else {
+      $("#CustomerManage .invalidCustId").text("Invalid Customer Id!");
+      valid = false;
+    }    
 
-  if (/^[A-Z][a-z, ]+$/.test(customer.custAddress)) {
-    $("#CustomerManage .invalidCustAddress").text("");
+    if (/^(?:[A-Z][a-z]*)(?: [A-Z][a-z]*)*$/.test(customer.name)) {
+      $("#CustomerManage .invalidCustName").text("");
 
-    if (valid) {
-      valid = true;
-    }
-  } else {
-    $("#CustomerManage .invalidCustAddress").text("Invalid Customer Address!");
-    valid = false;
-  }
-
-  if (customer.custSalary != null && customer.custSalary > 0) {
-    $("#CustomerManage .invalidCustSalary").text("");
-    if (valid) {
-      valid = true;
-    }
-  } else {
-    $("#CustomerManage .invalidCustSalary").text("Invalid Customer Salary!");
-    valid = false;
-  }
-
-  let customers = getAllCustomers();
-  for (let i = 0; i < customers.length; i++) {
-    if (customers[i].custId === customer.custId) {
-      $("#CustomerManage .invalidCustId").text("Customer Id Already Exists!");
+      if (valid) {
+        valid = true;
+      }
+    } else {
+      $("#CustomerManage .invalidCustName").text("Invalid Customer Name!");
       valid = false;
     }
-  }
-  return valid;
+
+    if (/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(customer.email)) {
+      $("#CustomerManage .invalidCustEmail").text("");
+
+      if (valid) {
+        valid = true;
+      }
+    } else {
+      $("#CustomerManage .invalidCustEmail").text("Invalid Email Address!");
+      valid = false;
+    }
+
+    if (/^(?:[A-Z][a-z]*)(?: [A-Z][a-z]*)*$/.test(customer.city)) {
+      $("#CustomerManage .invalidCustCity").text("");
+      if (valid) {
+        valid = true;
+      }
+    } else {
+      $("#CustomerManage .invalidCustCity").text("Invalid City Name!");
+      valid = false;
+    }
+
+    getAllCustomers()
+      .then((customers) => {
+        for (let i = 0; i < customers.length; i++) {
+          if (customers[i].id === customer.id) {
+            $("#CustomerManage .invalidCustId").text(
+              "Customer Id Already Exists!"
+            );
+            valid = false;
+          }
+        }
+        resolve(valid);
+      })
+      .catch((error) => {
+        console.error(error);
+        reject(false);
+      });
+  });
 }
 
-function createCustomerId() {
-  let customers = getAllCustomers();
-
+async function createCustomerId() {
+  const customers = await getAllCustomers();
   if (!customers || customers.length === 0) {
     return "C01";
   } else {
-    let lastCustomer = customers[customers.length - 1];
-    let id = lastCustomer && lastCustomer.custId ? lastCustomer.custId : "C00";
-
-    let number = extractNumber(id);
-    number++;
-    return "C0" + number;
+    const lastCustomer = customers[customers.length - 1];
+    const lastCustomerId = lastCustomer ? lastCustomer.id : "C00";
+    const lastIdNumber = parseInt(lastCustomerId.slice(1), 10); // Convert to number
+    const newIdNumber = lastIdNumber + 1;
+    return "C" + newIdNumber.toString().padStart(2, "0"); // Ensure ID is always 2 digits (minimum length)
   }
-}
-
-function extractNumber(id) {
-  var match = id.match(/C0(\d+)/);
-  if (match && match.length > 1) {
-    return parseInt(match[1]);
-  }
-  return null;
 }
 
 $("#CustomerManage .clearBtn").click(function () {
@@ -120,102 +125,124 @@ $("#CustomerManage .clearBtn").click(function () {
 });
 
 function refresh() {
-  $("#CustomerManage .custId").val(createCustomerId());
-  $("#CustomerManage .custName").val("");
-  $("#CustomerManage .custAddress").val("");
-  $("#CustomerManage .custSalary").val("");
-  $("#CustomerManage .invalidCustId").text("");
-  $("#CustomerManage .invalidCustName").text("");
-  $("#CustomerManage .invalidCustAddress").text("");
+  createCustomerId().then((newCustomerId) => {
+    $("#CustomerManage .custId").val(newCustomerId);
+    $("#CustomerManage .custName").val("");
+    $("#CustomerManage .custEmail").val("");
+    $("#CustomerManage .custCity").val("");
+    $("#CustomerManage .invalidCustId").text("");
+    $("#CustomerManage .invalidCustName").text("");
+    $("#CustomerManage .invalidCustEmail").text("");
+    $("#CustomerManage .invalidCustCity").text("");
 
-  reloadTable();
+    reloadTable();
+  });
 }
 
 function reloadTable() {
-  let customers = getAllCustomers();
-  $("#CustomerManage .tableRow").empty();
-  customers.forEach((c) => {
-    loadTable(c);
-  });
+  getAllCustomers()
+    .then((customers) => {
+      $("#CustomerManage .tableRow").empty();
+      customers.forEach((c) => {
+        loadTable(c);
+      });
+    })
+    .catch((error) => {
+      console.error("Failed to reload table:", error);
+    });
 }
 
 function loadTable(customer) {
   $("#CustomerManage .tableRow").append(
     "<tr> " +
       "<td>" +
-      customer.custId +
+      customer.id +
       "</td>" +
       "<td>" +
-      customer.custName +
+      customer.name +
       "</td>" +
       "<td>" +
-      customer.custAddress +
+      customer.email +
       "</td>" +
       "<td>" +
-      customer.custSalary +
+      customer.city +
       "</td>" +
       "</tr>"
   );
 }
 
 $("#CustomerManage .searchBtn").click(function () {
-  let customer = searchCustomer($("#CustomerManage .custId").val());
-  if (customer) {
-    $("#CustomerManage .custName").val(customer.custName);
-    $("#CustomerManage .custAddress").val(customer.custAddress);
-    $("#CustomerManage .custSalary").val(customer.custSalary);
-  } else {
-    alert("Customer Not Found");
-  }
+  const custId = $("#CustomerManage .custId").val();
+
+  searchCustomer(custId)
+    .then((customer) => {
+      if (customer) {
+        $("#CustomerManage .custName").val(customer.name);
+        $("#CustomerManage .custEmail").val(customer.email);
+        $("#CustomerManage .custCity").val(customer.city);
+      } else {
+        alert("Customer Not Found");
+      }
+    })
+    .catch((error) => {
+      console.error("Error during search:", error);
+    });
 });
 
-function searchCustomer(id) {
-  let customers = getAllCustomers();
-  let customer = customers.find((c) => c.custId === id);
-  return customer;
+async function searchCustomer(id) {
+  try {
+    const customers = await getAllCustomers();
+    return customers.find((c) => c.id === id);
+  } catch (error) {
+    console.error("Failed to get customers:", error);
+    return null;
+  }
 }
 
 $("#CustomerManage .updateBtn").click(function () {
   let UpdateCustomer = {
-    custId: "C00",
-    custName: $("#CustomerManage .custName").val(),
-    custAddress: $("#CustomerManage .custAddress").val(),
-    custSalary: $("#CustomerManage .custSalary").val(),
+    id: "C00",
+    name: $("#CustomerManage .custName").val(),
+    email: $("#CustomerManage .custEmail").val(),
+    city: $("#CustomerManage .custCity").val(),
   };
 
   let validResult = validate(UpdateCustomer);
 
-  UpdateCustomer.custId = $("#CustomerManage .custId").val();
+  UpdateCustomer.id = $("#CustomerManage .custId").val();
 
   if (validResult) {
-    let customers = getAllCustomers();
-    let index = customers.findIndex((c) => c.custId === UpdateCustomer.custId);
-    updateCustomer(index, UpdateCustomer);
+    updateCustomer(UpdateCustomer);
     refresh();
   }
 });
 
 $("#CustomerManage .removeBtn").click(function () {
-  let customers = getAllCustomers();
-  let id = $("#CustomerManage .custId").val();
+  let custId = $("#CustomerManage .custId").val();
 
-  let index = customers.findIndex((c) => c.custId === id);
-  if (index >= 0) {
-    deleteCustomer(index);
-    refresh();
-  } else {
-    alert("Customer Not Found!");
-  }
+  getAllCustomers()
+    .then((customers) => {
+      let customer = customers.findIndex((c) => c.id === custId);
+      if (customer) {
+        deleteCustomer(custId);
+        refresh();
+      } else {
+        alert("Customer Not Found!");
+      }
+    })
+    .catch((error) => {
+      console.error("Failed to get customers:", error);
+    });
 });
 
 $("#CustomerManage .tableRow").on("click", "tr", function () {
   let id = $(this).children("td:eq(0)").text();
   let name = $(this).children("td:eq(1)").text();
-  let qty = $(this).children("td:eq(2)").text();
-  let price = $(this).children("td:eq(3)").text();
+  let email = $(this).children("td:eq(2)").text();
+  let city = $(this).children("td:eq(3)").text();
 
   $("#CustomerManage .custId").val(id);
   $("#CustomerManage .custName").val(name);
-  $("#CustomerManage .custAddress").val(qty);
-  $("#CustomerManage .custSalary").val(price);
+  $("#CustomerManage .custEmail").val(email);
+  $("#CustomerManage .custCity").val(city);
 });

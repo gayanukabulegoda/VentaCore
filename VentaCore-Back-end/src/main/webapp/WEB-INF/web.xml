@@ -6,7 +6,7 @@
 
     <context-param>
         <param-name>origin</param-name>
-        <param-value>http://127.0.0.1:5500</param-value>
+        <param-value>http://127.0.0.1:5505</param-value>
     </context-param>
 
     <resource-ref>

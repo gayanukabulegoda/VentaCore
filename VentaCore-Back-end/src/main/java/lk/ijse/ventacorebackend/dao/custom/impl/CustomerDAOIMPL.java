@@ -10,9 +10,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CustomerDAOIMPL implements CustomerDAO {
-    public static String SAVE_CUSTOMER = "INSERT INTO customer (id, name, address, city) VALUES(?,?,?,?)";
+    public static String SAVE_CUSTOMER = "INSERT INTO customer (id, name, email, city) VALUES(?,?,?,?)";
     public static String GET_CUSTOMER = "SELECT * FROM customer WHERE id=?";
-    public static String UPDATE_CUSTOMER = "UPDATE customer SET name=?, address=?, city=? WHERE id=?";
+    public static String UPDATE_CUSTOMER = "UPDATE customer SET name=?, email=?, city=? WHERE id=?";
     public static String DELETE_CUSTOMER = "DELETE FROM customer WHERE id=?";
     public static String GET_ALL_CUSTOMERS = "SELECT * FROM customer";
 
@@ -21,7 +21,7 @@ public class CustomerDAOIMPL implements CustomerDAO {
         return SQLUtil.execute(SAVE_CUSTOMER,
                 entity.getId(),
                 entity.getName(),
-                entity.getAddress(),
+                entity.getEmail(),
                 entity.getCity()
         );
     }
@@ -33,7 +33,7 @@ public class CustomerDAOIMPL implements CustomerDAO {
         if (set.next()) {
             entity.setId(set.getString(1));
             entity.setName(set.getString(2));
-            entity.setAddress(set.getString(3));
+            entity.setEmail(set.getString(3));
             entity.setCity(set.getString(4));
         }
         return entity;
@@ -43,7 +43,7 @@ public class CustomerDAOIMPL implements CustomerDAO {
     public boolean update(Customer entity) throws SQLException {
         return SQLUtil.execute(UPDATE_CUSTOMER,
                 entity.getName(),
-                entity.getAddress(),
+                entity.getEmail(),
                 entity.getCity(),
                 entity.getId()
         );
