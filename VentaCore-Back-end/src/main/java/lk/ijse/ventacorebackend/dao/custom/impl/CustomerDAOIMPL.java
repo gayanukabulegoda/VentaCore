@@ -7,12 +7,14 @@ import lk.ijse.ventacorebackend.util.SQLUtil;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
 
 public class CustomerDAOIMPL implements CustomerDAO {
     public static String SAVE_CUSTOMER = "INSERT INTO customer (id, name, address, city) VALUES(?,?,?,?)";
     public static String GET_CUSTOMER = "SELECT * FROM customer WHERE id=?";
     public static String UPDATE_CUSTOMER = "UPDATE customer SET name=?, address=?, city=? WHERE id=?";
     public static String DELETE_CUSTOMER = "DELETE FROM customer WHERE id=?";
+    public static String GET_ALL_CUSTOMERS = "SELECT * FROM customer";
 
     @Override
     public boolean save(Customer entity) throws SQLException {
@@ -53,7 +55,17 @@ public class CustomerDAOIMPL implements CustomerDAO {
     }
 
     @Override
-    public ArrayList<String> getAllId() throws SQLException {
-        return null;
+    public List<Customer> getAll() throws SQLException {
+        ResultSet rst = SQLUtil.execute(GET_ALL_CUSTOMERS);
+        List<Customer> customerList = new ArrayList<>();
+        while (rst.next()) {
+            customerList.add(new Customer(
+                    rst.getString(1),
+                    rst.getString(2),
+                    rst.getString(3),
+                    rst.getString(4)
+            ));
+        }
+        return customerList;
     }
 }

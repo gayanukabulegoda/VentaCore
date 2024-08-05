@@ -28,7 +28,7 @@ public class ItemDAOIMPL implements ItemDAO {
     }
 
     @Override
-    public ArrayList<String> getAllId() throws SQLException {
+    public ArrayList<Item> getAll() throws SQLException {
         return null;
     }
 }

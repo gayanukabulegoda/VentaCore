@@ -1,6 +1,7 @@
 package lk.ijse.ventacorebackend.dao.custom.impl;
 
 import lk.ijse.ventacorebackend.dao.custom.OrderDAO;
+import lk.ijse.ventacorebackend.entity.Order;
 import lk.ijse.ventacorebackend.entity.OrderItemDetail;
 
 import java.sql.SQLException;
@@ -28,7 +29,7 @@ public class OrderDAOIMPL implements OrderDAO {
     }
 
     @Override
-    public ArrayList<String> getAllId() throws SQLException {
+    public ArrayList<OrderItemDetail> getAll() throws SQLException {
         return null;
     }
 }

@@ -1,3 +1,16 @@
 00:55:27.000 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.CustomerController - Customer Controller Initialized
 00:59:28.054 [http-nio-8080-exec-1] INFO  l.i.ventacorebackend.db.DbConnection - Initializing DB connection
 00:59:28.510 [http-nio-8080-exec-1] DEBUG l.i.ventacorebackend.db.DbConnection - Connection Initialized: 1949127249, URL=jdbc:mysql://localhost:3306/ventaCore?createDatabaseIfNotExist=true, MySQL Connector/J
+12:39:14.843 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.CustomerController - Customer Controller Initialized
+12:39:52.203 [http-nio-8080-exec-5] INFO  l.i.ventacorebackend.db.DbConnection - Initializing DB connection
+12:39:52.719 [http-nio-8080-exec-5] DEBUG l.i.ventacorebackend.db.DbConnection - Connection Initialized: 1970210191, URL=jdbc:mysql://localhost:3306/ventaCore?createDatabaseIfNotExist=true, MySQL Connector/J
+12:39:52.790 [http-nio-8080-exec-5] INFO  l.i.v.controller.CustomerController - Customer Retrieved Successfully
+12:41:16.739 [http-nio-8080-exec-8] INFO  l.i.v.controller.CustomerController - Customer Updated Successfully
+12:41:44.864 [http-nio-8080-exec-1] INFO  l.i.v.controller.CustomerController - Customer Saved Successfully
+12:42:38.527 [http-nio-8080-exec-3] INFO  l.i.v.controller.CustomerController - Customer Deleted Successfully
+13:12:12.292 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.CustomerController - Customer Controller Initialized
+13:12:21.261 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.CustomerController - Customer Controller Initialized
+13:13:40.804 [http-nio-8080-exec-2] INFO  l.i.ventacorebackend.db.DbConnection - Initializing DB connection
+13:13:41.228 [http-nio-8080-exec-2] DEBUG l.i.ventacorebackend.db.DbConnection - Connection Initialized: 982494930, URL=jdbc:mysql://localhost:3306/ventaCore?createDatabaseIfNotExist=true, MySQL Connector/J
+13:13:41.341 [http-nio-8080-exec-2] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+13:14:05.090 [http-nio-8080-exec-5] INFO  l.i.v.controller.CustomerController - Customer Retrieved Successfully

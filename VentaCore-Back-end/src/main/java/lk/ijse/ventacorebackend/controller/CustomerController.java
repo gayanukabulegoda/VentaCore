@@ -46,16 +46,63 @@ public class CustomerController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        var customerId = req.getParameter("customerId");
+        try(var writer = resp.getWriter()) {
+            Jsonb jsonb = JsonbBuilder.create();
+            resp.setContentType("application/json");
 
+            if (customerId != null) {
+                jsonb.toJson(customerBO.getCustomerData(customerId), writer);
+                resp.setStatus(HttpServletResponse.SC_OK);
+                logger.info("Customer Retrieved Successfully");
+            } else {
+                jsonb.toJson(customerBO.getAllCustomers(), writer);
+                resp.setStatus(HttpServletResponse.SC_OK);
+                logger.info("All Customers Retrieved Successfully");
+            }
+        } catch (Exception e){
+            resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            logger.error("Error while retrieving Customer", e);
+            e.printStackTrace();
+        }
     }
 
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doPut(req, resp);
+        try (var writer = resp.getWriter()) {
+            Jsonb jsonb = JsonbBuilder.create();
+            CustomerDTO customerDTO = jsonb.fromJson(req.getReader(), CustomerDTO.class);
+            if (customerBO.updateCustomer(customerDTO)) {
+                resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
+                logger.info("Customer Updated Successfully");
+            } else {
+                writer.write("Update failed");
+                resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+                logger.error("Update failed");
+            }
+        } catch (Exception e) {
+            resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            logger.error("Error while updating Customer", e);
+            e.printStackTrace();
+        }
     }
 
     @Override
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doDelete(req, resp);
+        try (var writer = resp.getWriter()) {
+            var customerId = req.getParameter("customerId");
+            if(customerBO.deleteCustomer(customerId)){
+                resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
+                logger.info("Customer Deleted Successfully");
+            }else {
+                writer.write("Delete failed");
+                resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+                logger.error("Delete failed");
+            }
+        } catch (Exception e){
+            resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            logger.error("Error while deleting Customer", e);
+            e.printStackTrace();
+        }
     }
 }

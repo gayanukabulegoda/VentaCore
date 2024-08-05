@@ -8,6 +8,7 @@ import lk.ijse.ventacorebackend.entity.Customer;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
 
 public class CustomerBOIMPL implements CustomerBO {
     CustomerDAO customerDAO =
@@ -55,7 +56,18 @@ public class CustomerBOIMPL implements CustomerBO {
     }
 
     @Override
-    public ArrayList<String> getAllCustomerId() throws SQLException {
-        return null;
+    public List<CustomerDTO> getAllCustomers() throws SQLException {
+        List<Customer> customerEntities = customerDAO.getAll();
+        List<CustomerDTO> customerDTOs = new ArrayList<>();
+        for (Customer customer : customerEntities) {
+            customerDTOs.add(
+                    new CustomerDTO(
+                            customer.getId(),
+                            customer.getName(),
+                            customer.getAddress(),
+                            customer.getCity()
+                    ));
+        }
+        return customerDTOs;
     }
 }
