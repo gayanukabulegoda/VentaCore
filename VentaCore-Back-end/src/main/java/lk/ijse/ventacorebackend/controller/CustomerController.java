@@ -76,9 +76,9 @@ public class CustomerController extends HttpServlet {
                 resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
                 logger.info("Customer Updated Successfully");
             } else {
-                writer.write("Update failed");
+                writer.write("Customer Update Failed");
                 resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-                logger.error("Update failed");
+                logger.error("Customer Update Failed");
             }
         } catch (Exception e) {
             resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
@@ -95,9 +95,9 @@ public class CustomerController extends HttpServlet {
                 resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
                 logger.info("Customer Deleted Successfully");
             }else {
-                writer.write("Delete failed");
+                writer.write("Customer Delete Failed");
                 resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-                logger.error("Delete failed");
+                logger.error("Customer Delete Failed");
             }
         } catch (Exception e){
             resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);

@@ -14,3 +14,112 @@
 13:13:41.228 [http-nio-8080-exec-2] DEBUG l.i.ventacorebackend.db.DbConnection - Connection Initialized: 982494930, URL=jdbc:mysql://localhost:3306/ventaCore?createDatabaseIfNotExist=true, MySQL Connector/J
 13:13:41.341 [http-nio-8080-exec-2] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
 13:14:05.090 [http-nio-8080-exec-5] INFO  l.i.v.controller.CustomerController - Customer Retrieved Successfully
+14:47:04.342 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.CustomerController - Customer Controller Initialized
+14:47:04.345 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.ItemController - Item Controller Initialized
+14:47:28.339 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.CustomerController - Customer Controller Initialized
+14:47:28.342 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.ItemController - Item Controller Initialized
+14:47:35.733 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.CustomerController - Customer Controller Initialized
+14:47:35.737 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.ItemController - Item Controller Initialized
+14:47:52.468 [http-nio-8080-exec-2] ERROR l.i.v.controller.ItemController - Error while saving Item
+jakarta.json.bind.JsonbException: Unable to deserialize property 'price' because of: Error deserialize JSON value into type: double.
+	at org.eclipse.yasson.internal.deserializer.ObjectDeserializer.deserialize(ObjectDeserializer.java:80)
+	at org.eclipse.yasson.internal.deserializer.ObjectDeserializer.deserialize(ObjectDeserializer.java:31)
+	at org.eclipse.yasson.internal.deserializer.DefaultObjectInstanceCreator.deserialize(DefaultObjectInstanceCreator.java:57)
+	at org.eclipse.yasson.internal.deserializer.DefaultObjectInstanceCreator.deserialize(DefaultObjectInstanceCreator.java:29)
+	at org.eclipse.yasson.internal.deserializer.PositionChecker.deserialize(PositionChecker.java:85)
+	at org.eclipse.yasson.internal.deserializer.PositionChecker.deserialize(PositionChecker.java:34)
+	at org.eclipse.yasson.internal.deserializer.NullCheckDeserializer.deserialize(NullCheckDeserializer.java:46)
+	at org.eclipse.yasson.internal.deserializer.NullCheckDeserializer.deserialize(NullCheckDeserializer.java:26)
+	at org.eclipse.yasson.internal.DeserializationContextImpl.deserializeItem(DeserializationContextImpl.java:138)
+	at org.eclipse.yasson.internal.DeserializationContextImpl.deserialize(DeserializationContextImpl.java:127)
+	at org.eclipse.yasson.internal.JsonBinding.deserialize(JsonBinding.java:55)
+	at org.eclipse.yasson.internal.JsonBinding.fromJson(JsonBinding.java:78)
+	at lk.ijse.ventacorebackend.controller.ItemController.doPost(ItemController.java:36)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: jakarta.json.bind.JsonbException: Error deserialize JSON value into type: double.
+	at org.eclipse.yasson.internal.deserializer.types.AbstractNumberDeserializer.lambda$actualDeserializer$0(AbstractNumberDeserializer.java:53)
+	at org.eclipse.yasson.internal.deserializer.types.AbstractNumberDeserializer.deserializeStringValue(AbstractNumberDeserializer.java:89)
+	at org.eclipse.yasson.internal.deserializer.types.TypeDeserializer.deserialize(TypeDeserializer.java:37)
+	at org.eclipse.yasson.internal.deserializer.ValueExtractor.deserialize(ValueExtractor.java:47)
+	at org.eclipse.yasson.internal.deserializer.ValueExtractor.deserialize(ValueExtractor.java:24)
+	at org.eclipse.yasson.internal.deserializer.PositionChecker.deserialize(PositionChecker.java:85)
+	at org.eclipse.yasson.internal.deserializer.PositionChecker.deserialize(PositionChecker.java:34)
+	at org.eclipse.yasson.internal.deserializer.NullCheckDeserializer.deserialize(NullCheckDeserializer.java:46)
+	at org.eclipse.yasson.internal.deserializer.NullCheckDeserializer.deserialize(NullCheckDeserializer.java:26)
+	at org.eclipse.yasson.internal.deserializer.ObjectDeserializer.deserialize(ObjectDeserializer.java:78)
+	... 36 common frames omitted
+Caused by: java.lang.NumberFormatException: For input string: "Rs.100.00"
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:792)
+	at org.eclipse.yasson.internal.deserializer.types.DoubleDeserializer.parseNumberValue(DoubleDeserializer.java:26)
+	at org.eclipse.yasson.internal.deserializer.types.DoubleDeserializer.parseNumberValue(DoubleDeserializer.java:18)
+	at org.eclipse.yasson.internal.deserializer.types.AbstractNumberDeserializer.lambda$actualDeserializer$0(AbstractNumberDeserializer.java:51)
+	... 45 common frames omitted
+14:54:39.562 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.CustomerController - Customer Controller Initialized
+14:54:39.564 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.ItemController - Item Controller Initialized
+14:55:48.758 [http-nio-8080-exec-2] ERROR l.i.v.controller.ItemController - Error while saving Item
+java.lang.NumberFormatException: For input string: "Rs.100.00"
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:792)
+	at lk.ijse.ventacorebackend.bo.custom.impl.ItemBOIMPL.saveItem(ItemBOIMPL.java:28)
+	at lk.ijse.ventacorebackend.controller.ItemController.doPost(ItemController.java:37)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+14:57:33.201 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.CustomerController - Customer Controller Initialized
+14:57:33.204 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.ItemController - Item Controller Initialized
+14:57:44.677 [http-nio-8080-exec-1] INFO  l.i.ventacorebackend.db.DbConnection - Initializing DB connection
+14:57:45.069 [http-nio-8080-exec-1] DEBUG l.i.ventacorebackend.db.DbConnection - Connection Initialized: 1741517867, URL=jdbc:mysql://localhost:3306/ventaCore?createDatabaseIfNotExist=true, MySQL Connector/J
+14:57:45.100 [http-nio-8080-exec-1] INFO  l.i.v.controller.ItemController - Item Saved Successfully
+14:58:08.200 [http-nio-8080-exec-6] INFO  l.i.v.controller.ItemController - Item Retrieved Successfully
+14:58:48.026 [http-nio-8080-exec-8] INFO  l.i.v.controller.ItemController - Item Saved Successfully
+14:58:56.317 [http-nio-8080-exec-9] INFO  l.i.v.controller.ItemController - Item Retrieved Successfully
+14:59:08.828 [http-nio-8080-exec-10] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+14:59:29.896 [http-nio-8080-exec-3] INFO  l.i.v.controller.ItemController - Item Updated Successfully
+14:59:39.578 [http-nio-8080-exec-4] INFO  l.i.v.controller.ItemController - Item Deleted Successfully
