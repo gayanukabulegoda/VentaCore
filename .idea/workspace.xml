@@ -10,21 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69a5e4c0-dcad-415d-aa20-38d1b6e16bac" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9442431f-7d4a-4cbe-b9e6-5c22827eb2df.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9442431f-7d4a-4cbe-b9e6-5c22827eb2df.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/bo/custom/impl/CustomerBOIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/bo/custom/impl/CustomerBOIMPL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/dao/custom/impl/CustomerDAOIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/dao/custom/impl/CustomerDAOIMPL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/dto/CustomerDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/dto/CustomerDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/entity/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/filter/CORSFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/java/lk/ijse/ventacorebackend/filter/CORSFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VentaCore-Back-end/src/main/resources/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/resources/db.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VentaCore-Back-end/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/VentaCore-Back-end/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VentaCore-Front-end/assests/css/style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/VentaCore-Front-end/controller/CustomerController.js" beforeDir="false" afterPath="$PROJECT_DIR$/VentaCore-Front-end/controller/CustomerController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VentaCore-Front-end/db/DB.js" beforeDir="false" afterPath="$PROJECT_DIR$/VentaCore-Front-end/db/DB.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VentaCore-Front-end/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/VentaCore-Front-end/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VentaCore-Front-end/model/Customer.js" beforeDir="false" afterPath="$PROJECT_DIR$/VentaCore-Front-end/model/Customer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VentaCore-Front-end/controller/ItemController.js" beforeDir="false" afterPath="$PROJECT_DIR$/VentaCore-Front-end/controller/ItemController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VentaCore-Front-end/model/Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/VentaCore-Front-end/model/Item.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -196,8 +187,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.55" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.55" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18968.26" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18968.26" />
       </set>
     </attachedChunks>
   </component>
@@ -218,7 +209,8 @@
       <workItem from="1722862155454" duration="205000" />
       <workItem from="1722862368824" duration="110000" />
       <workItem from="1722862493497" duration="190000" />
-      <workItem from="1722866012320" duration="10371000" />
+      <workItem from="1722866012320" duration="12623000" />
+      <workItem from="1722927383333" duration="5700000" />
     </task>
     <servers />
   </component>

@@ -33,7 +33,7 @@ $("#CustomerManage .saveBtn").click(function () {
 
   validate(customer)
     .then((validResult) => {
-      if (validResult) {        
+      if (validResult) {
         saveCustomer(customer, () => {
           refresh();
         });
@@ -54,7 +54,7 @@ function validate(customer) {
     } else {
       $("#CustomerManage .invalidCustId").text("Invalid Customer Id!");
       valid = false;
-    }    
+    }
 
     if (/^(?:[A-Z][a-z]*)(?: [A-Z][a-z]*)*$/.test(customer.name)) {
       $("#CustomerManage .invalidCustName").text("");
@@ -212,8 +212,19 @@ $("#CustomerManage .updateBtn").click(function () {
   UpdateCustomer.id = $("#CustomerManage .custId").val();
 
   if (validResult) {
-    updateCustomer(UpdateCustomer);
-    refresh();
+    getAllCustomers()
+      .then((customers) => {
+        let customer = customers.findIndex((c) => {c.id === UpdateCustomer.id});
+        if (customer) {
+          updateCustomer(UpdateCustomer);
+          refresh();
+        } else {
+          alert("Customer Not Found!");
+        }
+      })
+      .catch((error) => {
+        console.error("Failed to get customers:", error);
+      });
   }
 });
 
@@ -222,7 +233,7 @@ $("#CustomerManage .removeBtn").click(function () {
 
   getAllCustomers()
     .then((customers) => {
-      let customer = customers.findIndex((c) => c.id === custId);
+      let customer = customers.findIndex((c) => {c.id === custId});
       if (customer) {
         deleteCustomer(custId);
         refresh();
