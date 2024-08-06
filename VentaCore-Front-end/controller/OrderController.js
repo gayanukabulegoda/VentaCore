@@ -16,85 +16,119 @@ $(".orderManageBtn").click(function () {
 });
 
 function refresh() {
-  $("#OrderManage .orderId").val(generateId());
-  $("#OrderManage .orderDate").val(new Date().toISOString().split("T")[0]);
-  loadCustomer();
-  loadItems();
+  generateOrderId().then((newOrderId) => {
+    $("#OrderManage .orderId").val(newOrderId);
+    $("#OrderManage .orderDate").val(new Date().toISOString().split("T")[0]);
+    $("#OrderManage .Cash").val(" ");
+    $("#OrderManage .Discount").val(" ");
+    loadCustomer();
+    loadItems();
+  });
 }
 
-function generateId() {
-  let orders = getAllOrders();
-
+async function generateOrderId() {
+  const orders = await getAllOrders();
   if (orders.length === 0) {
     return "OD01";
   } else {
-    let orderId = orders[orders.length - 1].orderId;
-    let number = extractNumber(orderId);
-    number++;
-    return "OD0" + number;
+    let lastOrder = orders[orders.length - 1];
+    const lastOrderId = lastOrder ? lastOrder.id : "OD00";
+    const lastIdNumber = parseInt(lastOrderId.slice(2), 10); // Convert to number
+    const newIdNumber = lastIdNumber + 1;
+    return "OD" + newIdNumber.toString().padStart(2, "0"); // Ensure ID is always 2 digits (minimum length)
   }
-}
-
-function extractNumber(id) {
-  var match = id.match(/OD(\d+)/);
-  if (match && match.length > 1) {
-    return match[1];
-  }
-  return null;
 }
 
 function loadCustomer() {
   let cmb = $("#OrderManage .customers");
-  cmb.empty();
-  let option = [];
-  let customers = getAllCustomers();
-  option.unshift("");
+  cmb.empty(); // Clear existing options
 
-  for (let i = 0; i < customers.length; i++) {
-    option.push(customers[i].custId);
-  }
+  getAllCustomers()
+    .then((customers) => {
+      let option = [];
+      option.unshift(""); // Add an empty option at the beginning
 
-  $.each(option, function (index, value) {
-    cmb.append($("<option>").val(value).text(value));
-  });
+      customers.forEach((customer) => {
+        option.push(customer.id);
+      });
+
+      $.each(option, function (index, value) {
+        cmb.append($("<option>").val(value).text(value));
+      });
+    })
+    .catch((error) => {
+      console.error("Failed to load data to comboBox:", error);
+    });
 }
 
 function loadItems() {
   let cmb = $("#OrderManage .itemCmb");
-  cmb.empty();
-  let option = [];
-  let items = getAllItems();
+  cmb.empty(); // Clear existing options
 
-  for (let i = 0; i < items.length; i++) {
-    option.push(items[i].itemId);
-  }
+  getAllItems()
+    .then((items) => {
+      let option = [];
 
-  option.unshift("");
+      items.forEach((item) => {
+        option.push(item.id);
+      });
 
-  $.each(option, function (index, value) {
-    cmb.append($("<option>").val(value).text(value));
-  });
+      option.unshift(""); // Add an empty option at the beginning
+
+      $.each(option, function (index, value) {
+        cmb.append($("<option>").val(value).text(value));
+      });
+    })
+    .catch((error) => {
+      console.error("Failed to load data to comboBox:", error);
+    });
 }
 
 $("#OrderManage .customers").change(function () {
-  let customer = getAllCustomers().find((c) => c.custId === $(this).val());
-  $("#OrderManage .custId").val(customer.custId);
-  $("#OrderManage .custName").val(customer.custName);
-  $("#OrderManage .custAddress").val(customer.custAddress);
-  $("#OrderManage .custSalary").val(customer.custSalary);
+  const selectedCustomerId = $(this).val();
+
+  getAllCustomers()
+    .then((customers) => {
+      // Find the customer with the selected ID
+      const customer = customers.find((c) => c.id === selectedCustomerId);
+
+      if (customer) {
+        // Populate the fields with the customer data
+        $("#OrderManage .custId").val(customer.id);
+        $("#OrderManage .custName").val(customer.name);
+        $("#OrderManage .custAddress").val(customer.city);
+        $("#OrderManage .custSalary").val(customer.email);
+      } else {
+        alert("Customer not found!");
+      }
+    })
+    .catch((error) => {
+      console.error("Error retrieving customers:", error);
+    });
 });
 
 //.change() - A jQuery method that binds an event handler to the "change" event of the selected elements.
 
 $("#OrderManage .itemCmb").change(function () {
-  let item = getAllItems().find((i) => i.itemId === $(this).val());
-  itemId = item.itemId;
-  itemQty = item.itemQty;
-  $("#OrderManage .addBtn").text("Add");
-  $("#OrderManage .itemCode").val(item.itemId);
-  $("#OrderManage .itemName").val(item.itemName);
-  $("#OrderManage .itemQty").val(item.itemQty);
-  $("#OrderManage .itemPrice").val(item.itemPrice);
+  const selectedItemId = $(this).val();
+
+  getAllItems()
+    .then((items) => {
+      const item = items.find((i) => i.id === selectedItemId);
+
+      if (item) {
+        $("#OrderManage .addBtn").text("Add");
+        $("#OrderManage .itemCode").val(item.id);
+        $("#OrderManage .itemName").val(item.name);
+        $("#OrderManage .itemQty").val(item.qty);
+        $("#OrderManage .itemPrice").val(item.price);
+      } else {
+        alert("Item not found!");
+      }
+    })
+    .catch((error) => {
+      console.error("Error retrieving items:", error);
+    });
 });
 
 function clear(tableCount) {
@@ -129,10 +163,10 @@ $("#OrderManage .addBtn").click(function () {
     dropItem();
   } else {
     let getItem = {
-      itemCode: $("#OrderManage .itemCode").val(),
-      getItems: $("#OrderManage .itemName").val(),
-      itemPrice: parseFloat($("#OrderManage .itemPrice").val()),
-      itemQty: parseInt($("#OrderManage .orderQty").val(), 10), // 10 is the radix, 10 depicts base 10
+      id: $("#OrderManage .itemCode").val(),
+      name: $("#OrderManage .itemName").val(),
+      price: parseFloat($("#OrderManage .itemPrice").val()),
+      qty: parseInt($("#OrderManage .orderQty").val(), 10), // 10 is the radix, 10 depicts base 10
       total:
         parseFloat($("#OrderManage .itemPrice").val()) *
         parseInt($("#OrderManage .orderQty").val(), 10),
@@ -147,7 +181,7 @@ $("#OrderManage .addBtn").click(function () {
         $("#OrderManage .custName").val() !== null
       ) {
         if (orderQty > 0) {
-          let item = getItems.find((I) => I.itemCode === getItem.itemCode);
+          let item = getItems.find((I) => I.id === getItem.id);
           if (item == null) {
             getItems.push(getItem);
             loadTable();
@@ -170,8 +204,8 @@ $("#OrderManage .addBtn").click(function () {
 
 function dropItem() {
   let itemCode = $("#OrderManage .itemCode").val();
-  let item = getItems.find((I) => I.itemCode === itemCode);
-  let index = getItems.findIndex((I) => I.itemCode === itemCode);
+  let item = getItems.find((I) => I.id === itemCode);
+  let index = getItems.findIndex((I) => I.id === itemCode);
   getItems.splice(index, 1);
   loadTable();
   clear(1);
@@ -184,16 +218,16 @@ function loadTable() {
     $("#OrderManage .tableRows").append(
       "<div> " +
         "<div>" +
-        getItems[i].itemCode +
+        getItems[i].id +
         "</div>" +
         "<div>" +
-        getItems[i].getItems +
+        getItems[i].name +
         "</div>" +
         "<div>" +
-        getItems[i].itemPrice +
+        getItems[i].price +
         "</div>" +
         "<div>" +
-        getItems[i].itemQty +
+        getItems[i].qty +
         "</div>" +
         "<div>" +
         getItems[i].total +
@@ -225,9 +259,9 @@ $("#OrderManage .placeOrder").click(function () {
       $("#OrderManage .Balance").val(balance.toFixed(2));
 
       let Order = {
-        orderId: $("#OrderManage .orderId").val(),
-        orderDate: $("#OrderManage .orderDate").val(),
-        custId: $("#OrderManage .custId").val(),
+        id: $("#OrderManage .orderId").val(),
+        date: $("#OrderManage .orderDate").val(),
+        customerId: $("#OrderManage .custId").val(),
         items: getItems,
         total: total,
         discount: discount,
@@ -236,13 +270,18 @@ $("#OrderManage .placeOrder").click(function () {
         balance: balance,
       };
 
-      saveOrder(Order);
-      updateItemData();
-
-      getItems = [];
-      loadTable();
-      clear(2);
-      refresh();
+      saveOrder(Order)
+        .then(() => updateItemData())
+        .then(() => {
+          getItems = [];
+          loadTable();
+          clear(2);
+          refresh();
+        })
+        .catch((error) => {
+          console.error("Failed to save order:", error);
+          alert("Failed to save order");
+        });
     } else {
       alert("Invalid Discount!");
     }
@@ -252,13 +291,24 @@ $("#OrderManage .placeOrder").click(function () {
 });
 
 function updateItemData() {
-  let items = getAllItems();
-  for (let i = 0; i < getItems.length; i++) {
-    let item = items.find((I) => I.itemId === getItems[i].itemCode);
-    item.itemQty -= getItems[i].itemQty;
-    let index = items.findIndex((I) => I.itemId === getItems[i].itemCode);
-    updateItem(index, item);
-  }
+  return getAllItems()
+    .then((items) => {
+      const updatePromises = getItems.map((item) => {
+        let foundItem = items.find((I) => I.id === item.id);
+        if (foundItem) {
+          foundItem.qty -= item.qty;
+          return updateItem(foundItem);
+        } else {
+          console.warn(`Item with ID ${item.id} not found`);
+          return Promise.resolve();
+        }
+      });
+      return Promise.all(updatePromises);
+    })
+    .catch((error) => {
+      console.error("Failed to retrieve items:", error);
+      throw error;
+    });
 }
 
 $(".mainTable .tableRows").on("click", "div", function () {

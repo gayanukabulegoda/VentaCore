@@ -21,6 +21,10 @@ CREATE TABLE `order` (
                          date VARCHAR(60) NOT NULL,
                          customer_id VARCHAR(60) NOT NULL,
                          total FLOAT(40) NOT NULL,
+                         discount VARCHAR(20) NOT NULL,
+                         sub_total FLOAT(40) NOT NULL,
+                         cash FLOAT(40) NOT NULL,
+                         balance FLOAT(40) NOT NULL,
                          FOREIGN KEY (customer_id) REFERENCES customer(id)
                              ON UPDATE CASCADE
                              ON DELETE CASCADE

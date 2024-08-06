@@ -12,4 +12,8 @@ public class Order {
     private String date;
     private String customerId;
     private double total;
+    private String discount;
+    private double subTotal;
+    private double cash;
+    private double balance;
 }

@@ -1206,7 +1206,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </schema>
     <schema id="336" parent="1" name="ventaCore">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-08-05.14:20:45</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-08-06.13:20:56</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <user id="337" parent="1" name="debian-sys-maint">
@@ -1327,67 +1327,87 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <foreign-key id="362" parent="344" name="order_ibfk_1">
+    <column id="362" parent="344" name="discount">
+      <DasType>varchar(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="363" parent="344" name="sub_total">
+      <DasType>double|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="364" parent="344" name="cash">
+      <DasType>double|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+    </column>
+    <column id="365" parent="344" name="balance">
+      <DasType>double|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+    </column>
+    <foreign-key id="366" parent="344" name="order_ibfk_1">
       <ColNames>customer_id</ColNames>
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
       <RefColNames>id</RefColNames>
       <RefTableName>customer</RefTableName>
     </foreign-key>
-    <index id="363" parent="344" name="PRIMARY">
+    <index id="367" parent="344" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="364" parent="344" name="customer_id">
+    <index id="368" parent="344" name="customer_id">
       <ColNames>customer_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="365" parent="344" name="PRIMARY">
+    <key id="369" parent="344" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="366" parent="345" name="order_id">
+    <column id="370" parent="345" name="order_id">
       <DasType>varchar(60)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="367" parent="345" name="item_id">
+    <column id="371" parent="345" name="item_id">
       <DasType>varchar(60)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="368" parent="345" name="qty">
+    <column id="372" parent="345" name="qty">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <foreign-key id="369" parent="345" name="order_item_detail_ibfk_1">
+    <foreign-key id="373" parent="345" name="order_item_detail_ibfk_1">
       <ColNames>order_id</ColNames>
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
       <RefColNames>id</RefColNames>
       <RefTableName>order</RefTableName>
     </foreign-key>
-    <foreign-key id="370" parent="345" name="order_item_detail_ibfk_2">
+    <foreign-key id="374" parent="345" name="order_item_detail_ibfk_2">
       <ColNames>item_id</ColNames>
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
       <RefColNames>id</RefColNames>
       <RefTableName>item</RefTableName>
     </foreign-key>
-    <index id="371" parent="345" name="PRIMARY">
+    <index id="375" parent="345" name="PRIMARY">
       <ColNames>order_id
 item_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="372" parent="345" name="item_id">
+    <index id="376" parent="345" name="item_id">
       <ColNames>item_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="373" parent="345" name="PRIMARY">
+    <key id="377" parent="345" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

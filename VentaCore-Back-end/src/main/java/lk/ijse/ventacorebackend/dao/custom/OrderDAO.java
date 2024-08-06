@@ -1,7 +1,12 @@
 package lk.ijse.ventacorebackend.dao.custom;
 
-import lk.ijse.ventacorebackend.entity.OrderItemDetail;
-import lk.ijse.ventacorebackend.util.CrudUtil;
+import lk.ijse.ventacorebackend.dao.SuperDAO;
+import lk.ijse.ventacorebackend.entity.Order;
 
-public interface OrderDAO extends CrudUtil<OrderItemDetail> {
+import java.sql.SQLException;
+import java.util.List;
+
+public interface OrderDAO extends SuperDAO {
+    boolean save(Order entity) throws SQLException;
+    List<Order> getAll() throws SQLException;
 }
