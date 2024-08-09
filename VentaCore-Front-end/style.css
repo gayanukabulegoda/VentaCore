@@ -1,9 +1,8 @@
-/* Reset and Base Styles */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 body {
@@ -15,7 +14,7 @@ body {
 }
 
 header {
-  background: linear-gradient(135deg, #9C27B0, #6D1F6C);
+  background: linear-gradient(135deg, #9c27b0, #6d1f6c);
   color: #fff;
   padding: 1rem;
   text-align: center;
@@ -34,18 +33,18 @@ section {
 
 .container {
   display: flex;
-  margin-top: 3.3rem; /* Adjust based on header height */
-  height: calc(100vh - 4rem); /* Adjust based on header height */
+  margin-top: 3.3rem;
+  height: calc(100vh - 4rem);
 }
 
 .sidebar {
   width: 150px;
-  background: linear-gradient(135deg, #7B1FA2, #5C0F6F);
+  background: linear-gradient(135deg, #7b1fa2, #5c0f6f);
   color: #fff;
   padding: 1rem;
-  height: calc(100vh - 4rem); /* Adjust based on header height */
+  height: calc(100vh - 4rem);
   position: fixed;
-  top: 3.3rem; /* Adjust based on header height */
+  top: 3.3rem;
   left: 0;
   overflow-y: auto;
 }
@@ -57,6 +56,9 @@ section {
 .sidebar li {
   margin: 1rem 0 1rem 0;
   padding: 10px 0;
+  background-color: #7b1fa2;
+  border-radius: 12px;
+  transition: all 0.3s;
 }
 
 .sidebar .nav-link {
@@ -67,19 +69,21 @@ section {
   padding: 10px 20px 10px 15px;
 }
 
-.sidebar .nav-link:hover {
-  background: linear-gradient(135deg, #9C27B0, #6D1F6C);
-  border-radius: 5px;
-  padding: 10px 20px 10px 15px;
+.sidebar li:hover {
+  background: linear-gradient(135deg, #9c27b0, #6d1f6c);
+  border-radius: 12px;
+  margin: 1rem 0 1rem 0;
+  padding: 10px 0;
+  transform: scale(1.05);
 }
 
 .main-content {
-  width: calc(100% - 150px); /* Adjust based on sidebar width */
-  height: 95%;
+  width: calc(100% - 150px);
+  height: 97%;
   flex: 1;
   padding: 1rem;
   background: linear-gradient(135deg, #ffffff, #f5f5f5);
-  margin-left: 150px; /* Adjust based on sidebar width */
+  margin-left: 150px;
   overflow-y: auto;
 }
 
@@ -91,7 +95,7 @@ section {
 .carousel {
   position: relative;
   width: 100%;
-  max-width: 89%;
+  max-width: 100%;
   margin: 0 auto;
   overflow: hidden;
   border-radius: 10px;
@@ -100,11 +104,25 @@ section {
 
 .carousel-inner {
   display: flex;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  perspective: 1000px; /* Adds a 3D effect */
 }
 
 .carousel-item {
   min-width: 100%;
-  transition: transform 0.5s ease;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+  opacity: 0;
+  transform: rotateY(-45deg) scale(0.8); /* Initial 3D rotation and scale */
+}
+
+.carousel-item.active {
+  opacity: 1;
+  transform: rotateY(0deg) scale(1); /* Rotate back and scale to normal */
+}
+
+.carousel-item:not(.active) {
+  opacity: 0;
+  transform: rotateY(-45deg) scale(0.8);
 }
 
 .carousel img {
@@ -118,6 +136,7 @@ section {
   transform: translateY(-50%);
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
   border: none;
+  border-radius: 20px;
   color: #fff;
   padding: 0.5rem;
   cursor: pointer;
@@ -132,9 +151,9 @@ section {
 }
 
 .title {
-  color: #9C27B0;
-  margin-bottom: 1rem;
-  text-align: center;
+  color: #9c27b0;
+  margin: 1.5rem 0 1.2rem 0.8rem;
+  text-align: left;
 }
 
 form {
@@ -153,7 +172,8 @@ form label {
   margin-bottom: 0.5rem;
 }
 
-form input, form select {
+form input,
+form select {
   width: 100%;
   padding: 0.5rem;
   border: 1px solid #ccc;
@@ -165,7 +185,7 @@ form input, form select {
 }
 
 .buttons button {
-  background: linear-gradient(135deg, #9C27B0, #6D1F6C);
+  background: linear-gradient(135deg, #9c27b0, #6d1f6c);
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
@@ -176,7 +196,7 @@ form input, form select {
 }
 
 .buttons button:hover {
-  background: linear-gradient(135deg, #7B1FA2, #5C0F6F);
+  background: linear-gradient(135deg, #7b1fa2, #5c0f6f);
 }
 
 table {
@@ -185,22 +205,24 @@ table {
   margin-top: 1rem;
 }
 
-table th, table td {
+table th,
+table td {
   padding: 0.5rem;
   border: 1px solid #ccc;
   text-align: left;
 }
 
 table th {
-  background: linear-gradient(135deg, #9C27B0, #6D1F6C);
+  background: linear-gradient(135deg, #9c27b0, #6d1f6c);
   color: #fff;
 }
 
 footer {
-  background: linear-gradient(135deg, #9C27B0, #6D1F6C);
+  background: linear-gradient(135deg, #9c27b0, #6d1f6c);
   color: #fff;
+  font-size: 14px;
   text-align: center;
-  padding: 1rem;
+  padding: 0.5rem;
   position: fixed;
   width: 100%;
   bottom: 0;
@@ -209,16 +231,22 @@ footer {
 /* Order Management Section */
 #OrderManage {
   padding: 1rem;
-  background-color: #f5f5f5;background: linear-gradient(135deg, #ffffff, #f5f5f5);
+  background-color: #f5f5f5;
+  background: linear-gradient(135deg, #ffffff, #f5f5f5);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* #OrderManage div {
+.order-sections {
   display: flex;
-} */
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
 
-.includeDetails, .ItemSelect, .TotalCal {
+.includeDetails,
+.ItemSelect,
+.TotalCal {
   background: linear-gradient(135deg, #ffffff, #f5f5f5);
   padding: 1rem;
   margin-bottom: 1rem;
@@ -226,29 +254,38 @@ footer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
+  flex: 1;
+  min-width: calc(33.333% - 1rem);
 }
 
-.includeDetails h1, .ItemSelect h1, .TotalCal h1 {
-  color: #9C27B0;
+.includeDetails h1,
+.ItemSelect h1,
+.TotalCal h1 {
+  color: #9c27b0;
   margin-bottom: 1rem;
   font-size: 1.5rem;
 }
 
-.includeDetails div, .ItemSelect div {
+.includeDetails div,
+.ItemSelect div {
   margin-bottom: 1rem;
 }
 
-.includeDetails form, .ItemSelect form {
+.includeDetails form,
+.ItemSelect form {
   display: flex;
   flex-direction: column;
 }
 
-.includeDetails label, .ItemSelect label {
+.includeDetails label,
+.ItemSelect label {
   margin-bottom: 0.5rem;
   font-weight: bold;
 }
 
-.includeDetails input, .ItemSelect input, .ItemSelect select {
+.includeDetails input,
+.ItemSelect input,
+.ItemSelect select {
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -256,7 +293,7 @@ footer {
 }
 
 .ItemSelect .addBtn {
-  background: linear-gradient(135deg, #9C27B0, #6D1F6C);
+  background: linear-gradient(135deg, #9c27b0, #6d1f6c);
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
@@ -264,10 +301,12 @@ footer {
   cursor: pointer;
   transition: background-color 0.3s;
   margin-top: 1rem;
+  transition: all 0.3s;
 }
 
 .ItemSelect .addBtn:hover {
-  background: linear-gradient(135deg, #7B1FA2, #5C0F6F);
+  background: linear-gradient(135deg, #7b1fa2, #5c0f6f);
+  transform: scale(1.05);
 }
 
 .TotalCal {
@@ -275,7 +314,8 @@ footer {
   flex-direction: column;
 }
 
-.TotalCal h1, .TotalCal h2 {
+.TotalCal h1,
+.TotalCal h2 {
   margin-bottom: 1rem;
 }
 
@@ -284,7 +324,7 @@ footer {
 }
 
 .TotalCal button.placeOrder {
-  background: linear-gradient(135deg, #9C27B0, #6D1F6C);
+  background: linear-gradient(135deg, #9c27b0, #6d1f6c);
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
@@ -292,84 +332,225 @@ footer {
   cursor: pointer;
   transition: background-color 0.3s;
   margin-top: 1rem;
+  transition: all 0.3s;
 }
 
 .TotalCal button.placeOrder:hover {
-  background: linear-gradient(135deg, #7B1FA2, #5C0F6F);
+  background: linear-gradient(135deg, #7b1fa2, #5c0f6f);
+  transform: scale(1.05);
 }
 
 .mainTable {
   margin-top: 1rem;
-}
-
-.mainTable .table {
   background: linear-gradient(135deg, #ffffff, #f5f5f5);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
 }
 
-.mainTable .table div {
-  display: flex;
-  padding: 0.5rem;
-  border-bottom: 1px solid #ccc;
-}
-
-.mainTable .table div div {
-  flex: 1;
-  text-align: center;
-}
-
-.mainTable .tableRows {
-  padding: 0.5rem;
-}
-
-.mainTable .tableRows div {
-  display: flex;
-  padding: 0.5rem;
-  border-bottom: 1px solid #eee;
-}
-
-#OrderManage .mainTable {
-  margin-top: 1rem;
-  overflow: auto;
-}
-
-#OrderManage .mainTable .table {
+.mainTable .table {
   width: 100%;
-  background: linear-gradient(135deg, #ffffff, #f5f5f5);
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  background: linear-gradient(135deg, #a560c7, #8a3a91);
 }
 
-#OrderManage .mainTable .table div {
+.mainTable .table div {
   display: flex;
   padding: 0.75rem;
   border-bottom: 1px solid #e0e0e0;
   align-items: center;
 }
 
-#OrderManage .mainTable .table div div {
+.mainTable .table div div {
   flex: 1;
   text-align: center;
   font-size: 0.875rem;
 }
 
-#OrderManage .mainTable .tableRows {
+.mainTable .tableRows {
   background: linear-gradient(135deg, #ffffff, #f5f5f5);
 }
 
-#OrderManage .mainTable .tableRows div {
+.mainTable .tableRows div {
   display: flex;
   padding: 0.75rem;
   border-bottom: 1px solid #f0f0f0;
   align-items: center;
 }
 
-#OrderManage .mainTable .tableRows div div {
+.mainTable .tableRows div div {
   flex: 1;
   text-align: center;
   font-size: 0.875rem;
+  border-bottom: 1px solid #8a3a91;
+}
+
+/* media queries */
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+  .sidebar {
+    width: 120px;
+  }
+
+  .main-content {
+    width: calc(100% - 120px);
+    margin-left: 120px;
+  }
+
+  .sidebar .nav-link {
+    font-size: 1rem;
+    padding: 8px 15px 8px 10px;
+  }
+
+  .sidebar li {
+    margin: 0.8rem 0 0.8rem 0;
+    padding: 8px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 100px;
+  }
+
+  .main-content {
+    width: calc(100% - 100px);
+    margin-left: 100px;
+  }
+
+  .sidebar .nav-link {
+    font-size: 0.9rem;
+    padding: 6px 10px 6px 8px;
+  }
+
+  .sidebar li {
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 6px 0;
+  }
+
+  .order-sections {
+    flex-direction: column;
+  }
+
+  .includeDetails,
+  .ItemSelect,
+  .TotalCal {
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sidebar {
+    position: fixed;
+    width: 80px;
+    top: 3.3rem;
+    z-index: 1000;
+  }
+
+  .main-content {
+    width: 100%;
+    margin-left: 0;
+    padding: 1rem 0.5rem;
+  }
+
+  .sidebar ul {
+    padding-left: 0;
+  }
+
+  .sidebar .nav-link {
+    font-size: 0.8rem;
+    padding: 5px 8px 5px 6px;
+  }
+
+  .sidebar li {
+    margin: 0.3rem 0 0.3rem 0;
+    padding: 5px 0;
+  }
+
+  header,
+  footer {
+    font-size: 1.2rem;
+    padding: 0.75rem;
+  }
+
+  .carousel-control {
+    padding: 0.3rem;
+  }
+
+  .order-sections {
+    gap: 0.5rem;
+  }
+
+  .includeDetails h1,
+  .ItemSelect h1,
+  .TotalCal h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  header,
+  footer {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .sidebar {
+    width: 60px;
+  }
+
+  .sidebar .nav-link {
+    font-size: 0.7rem;
+    padding: 4px 6px 4px 4px;
+  }
+
+  .sidebar li {
+    margin: 0.2rem 0 0.2rem 0;
+    padding: 4px 0;
+  }
+
+  .main-content {
+    padding: 0.5rem;
+  }
+
+  .title {
+    font-size: 1rem;
+    margin: 1rem 0 1rem 0.5rem;
+  }
+
+  .includeDetails h1,
+  .ItemSelect h1,
+  .TotalCal h1 {
+    font-size: 1rem;
+  }
+
+  .carousel img {
+    border-radius: 5px;
+  }
+
+  form {
+    padding: 0.75rem;
+  }
+
+  form input,
+  form select {
+    padding: 0.4rem;
+  }
+
+  .buttons button {
+    padding: 0.4rem 0.8rem;
+  }
+
+  .mainTable {
+    margin-top: 0.5rem;
+  }
+
+  .mainTable .table div,
+  .mainTable .tableRows div {
+    padding: 0.5rem;
+  }
 }
 

@@ -2276,3 +2276,619 @@ java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'OD04' for ke
 19:53:12.126 [http-nio-8080-exec-1] INFO  l.i.v.controller.ItemController - Item Updated Successfully
 19:53:12.128 [http-nio-8080-exec-10] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
 19:53:12.128 [http-nio-8080-exec-9] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+21:14:47.192 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.OrderController - Order Controller Initialized
+21:14:47.195 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.CustomerController - Customer Controller Initialized
+21:14:47.196 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.ItemController - Item Controller Initialized
+21:15:04.944 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.OrderController - Order Controller Initialized
+21:15:04.946 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.CustomerController - Customer Controller Initialized
+21:15:04.947 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.ItemController - Item Controller Initialized
+13:21:45.279 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.OrderController - Order Controller Initialized
+13:21:45.283 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.CustomerController - Customer Controller Initialized
+13:21:45.284 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.ItemController - Item Controller Initialized
+13:21:53.420 [http-nio-8080-exec-1] INFO  l.i.ventacorebackend.db.DbConnection - Initializing DB connection
+13:21:53.965 [http-nio-8080-exec-1] DEBUG l.i.ventacorebackend.db.DbConnection - Connection Initialized: 392226515, URL=jdbc:mysql://localhost:3306/ventaCore?createDatabaseIfNotExist=true, MySQL Connector/J
+13:21:54.088 [http-nio-8080-exec-1] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+13:21:54.107 [http-nio-8080-exec-3] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+13:21:54.108 [http-nio-8080-exec-2] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+13:21:56.403 [http-nio-8080-exec-5] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+13:21:56.403 [http-nio-8080-exec-4] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+13:21:56.406 [http-nio-8080-exec-6] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+13:21:56.432 [http-nio-8080-exec-8] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+13:21:56.433 [http-nio-8080-exec-9] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+13:21:56.438 [http-nio-8080-exec-10] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+13:21:56.438 [http-nio-8080-exec-7] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+13:21:57.592 [http-nio-8080-exec-1] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+13:21:57.611 [http-nio-8080-exec-2] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+13:21:57.611 [http-nio-8080-exec-3] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+13:22:00.095 [http-nio-8080-exec-5] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+13:22:04.025 [http-nio-8080-exec-4] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+13:22:31.584 [http-nio-8080-exec-7] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+13:22:38.587 [http-nio-8080-exec-1] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+13:22:54.272 [http-nio-8080-exec-2] INFO  l.i.v.controller.OrderController - Order Saved Successfully
+13:22:54.287 [http-nio-8080-exec-5] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+13:22:54.318 [http-nio-8080-exec-6] INFO  l.i.v.controller.ItemController - Item Updated Successfully
+13:22:54.330 [http-nio-8080-exec-10] INFO  l.i.v.controller.ItemController - Item Updated Successfully
+13:22:54.338 [http-nio-8080-exec-9] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+13:22:54.356 [http-nio-8080-exec-1] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+13:22:54.356 [http-nio-8080-exec-7] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+13:23:31.019 [http-nio-8080-exec-8] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+13:23:31.022 [http-nio-8080-exec-6] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+13:23:31.022 [http-nio-8080-exec-4] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+13:23:31.121 [http-nio-8080-exec-10] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+13:23:31.131 [http-nio-8080-exec-9] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+13:23:31.134 [http-nio-8080-exec-7] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+13:23:31.134 [http-nio-8080-exec-1] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+13:23:33.813 [http-nio-8080-exec-5] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+13:23:33.834 [http-nio-8080-exec-3] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+13:23:33.835 [http-nio-8080-exec-2] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+13:23:36.156 [http-nio-8080-exec-8] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+13:23:40.228 [http-nio-8080-exec-4] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+13:23:49.856 [http-nio-8080-exec-6] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+13:23:59.904 [http-nio-8080-exec-7] INFO  l.i.v.controller.OrderController - Order Saved Successfully
+13:23:59.913 [http-nio-8080-exec-5] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+13:23:59.940 [http-nio-8080-exec-3] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+13:23:59.955 [http-nio-8080-exec-4] INFO  l.i.v.controller.ItemController - Item Updated Successfully
+13:23:59.967 [http-nio-8080-exec-6] INFO  l.i.v.controller.ItemController - Item Updated Successfully
+13:23:59.971 [http-nio-8080-exec-9] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+13:23:59.971 [http-nio-8080-exec-10] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+21:51:54.266 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.OrderController - Order Controller Initialized
+21:51:54.271 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.CustomerController - Customer Controller Initialized
+21:51:54.273 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.ItemController - Item Controller Initialized
+21:52:17.136 [http-nio-8080-exec-1] INFO  l.i.ventacorebackend.db.DbConnection - Initializing DB connection
+21:52:17.695 [http-nio-8080-exec-1] DEBUG l.i.ventacorebackend.db.DbConnection - Connection Initialized: 1379645920, URL=jdbc:mysql://localhost:3306/ventaCore?createDatabaseIfNotExist=true, MySQL Connector/J
+21:52:17.785 [http-nio-8080-exec-2] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+21:52:17.785 [http-nio-8080-exec-1] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+21:52:17.791 [http-nio-8080-exec-3] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+21:52:17.803 [http-nio-8080-exec-4] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+21:52:17.804 [http-nio-8080-exec-5] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+21:52:17.811 [http-nio-8080-exec-6] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+21:52:17.811 [http-nio-8080-exec-7] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+21:52:30.920 [http-nio-8080-exec-8] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+21:54:00.386 [http-nio-8080-exec-3] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+21:54:07.068 [http-nio-8080-exec-4] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+21:54:20.298 [http-nio-8080-exec-6] INFO  l.i.v.controller.OrderController - Order Saved Successfully
+21:54:20.313 [http-nio-8080-exec-7] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+21:54:20.351 [http-nio-8080-exec-10] INFO  l.i.v.controller.ItemController - Item Updated Successfully
+21:54:20.362 [http-nio-8080-exec-1] INFO  l.i.v.controller.ItemController - Item Updated Successfully
+21:54:20.368 [http-nio-8080-exec-2] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+21:54:20.387 [http-nio-8080-exec-3] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+21:54:20.394 [http-nio-8080-exec-4] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+21:58:36.800 [RMI TCP Connection(4)-127.0.0.1] INFO  l.i.v.controller.OrderController - Order Controller Initialized
+21:58:36.803 [RMI TCP Connection(4)-127.0.0.1] INFO  l.i.v.controller.CustomerController - Customer Controller Initialized
+21:58:36.804 [RMI TCP Connection(4)-127.0.0.1] INFO  l.i.v.controller.ItemController - Item Controller Initialized
+21:58:45.538 [http-nio-8080-exec-2] INFO  l.i.ventacorebackend.db.DbConnection - Initializing DB connection
+21:58:45.902 [http-nio-8080-exec-2] DEBUG l.i.ventacorebackend.db.DbConnection - Connection Initialized: 2076330489, URL=jdbc:mysql://localhost:3306/ventaCore?createDatabaseIfNotExist=true, MySQL Connector/J
+21:58:45.937 [http-nio-8080-exec-2] INFO  l.i.v.controller.OrderController - Order Saved Successfully
+21:59:35.365 [http-nio-8080-exec-5] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+16:15:39.821 [RMI TCP Connection(4)-127.0.0.1] INFO  l.i.v.controller.OrderController - Order Controller Initialized
+16:15:39.826 [RMI TCP Connection(4)-127.0.0.1] INFO  l.i.v.controller.CustomerController - Customer Controller Initialized
+16:15:39.827 [RMI TCP Connection(4)-127.0.0.1] INFO  l.i.v.controller.ItemController - Item Controller Initialized
+16:15:46.341 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.OrderController - Order Controller Initialized
+16:15:46.344 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.CustomerController - Customer Controller Initialized
+16:15:46.345 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.ItemController - Item Controller Initialized
+16:15:52.039 [http-nio-8080-exec-2] INFO  l.i.ventacorebackend.db.DbConnection - Initializing DB connection
+16:15:52.457 [http-nio-8080-exec-2] DEBUG l.i.ventacorebackend.db.DbConnection - Connection Initialized: 1092681009, URL=jdbc:mysql://localhost:3306/ventaCore?createDatabaseIfNotExist=true, MySQL Connector/J
+16:15:52.537 [http-nio-8080-exec-2] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+16:16:25.185 [http-nio-8080-exec-5] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+16:18:49.293 [http-nio-8080-exec-8] INFO  l.i.v.controller.OrderController - Order Saved Successfully
+16:20:25.088 [http-nio-8080-exec-1] INFO  l.i.v.controller.ItemController - Item Saved Successfully
+16:22:30.173 [http-nio-8080-exec-4] INFO  l.i.v.controller.ItemController - Item Retrieved Successfully
+16:23:01.213 [http-nio-8080-exec-7] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+16:23:33.598 [http-nio-8080-exec-10] INFO  l.i.v.controller.ItemController - Item Updated Successfully
+16:24:12.412 [http-nio-8080-exec-3] INFO  l.i.v.controller.ItemController - Item Deleted Successfully
+16:25:22.261 [http-nio-8080-exec-6] ERROR l.i.v.controller.CustomerController - Error while saving Customer
+java.sql.SQLIntegrityConstraintViolationException: Column 'email' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
+	at lk.ijse.ventacorebackend.util.SQLUtil.execute(SQLUtil.java:18)
+	at lk.ijse.ventacorebackend.dao.custom.impl.CustomerDAOIMPL.save(CustomerDAOIMPL.java:21)
+	at lk.ijse.ventacorebackend.dao.custom.impl.CustomerDAOIMPL.save(CustomerDAOIMPL.java:12)
+	at lk.ijse.ventacorebackend.bo.custom.impl.CustomerBOIMPL.saveCustomer(CustomerBOIMPL.java:20)
+	at lk.ijse.ventacorebackend.controller.CustomerController.doPost(CustomerController.java:37)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+16:25:52.259 [http-nio-8080-exec-9] ERROR l.i.v.controller.CustomerController - Customer Delete Failed
+16:26:23.865 [http-nio-8080-exec-1] INFO  l.i.v.controller.CustomerController - Customer Deleted Successfully
+16:27:02.193 [http-nio-8080-exec-4] INFO  l.i.v.controller.CustomerController - Customer Retrieved Successfully
+16:27:40.736 [http-nio-8080-exec-7] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+16:28:05.865 [http-nio-8080-exec-10] ERROR l.i.v.controller.CustomerController - Error while updating Customer
+java.sql.SQLIntegrityConstraintViolationException: Column 'email' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
+	at lk.ijse.ventacorebackend.util.SQLUtil.execute(SQLUtil.java:18)
+	at lk.ijse.ventacorebackend.dao.custom.impl.CustomerDAOIMPL.update(CustomerDAOIMPL.java:44)
+	at lk.ijse.ventacorebackend.dao.custom.impl.CustomerDAOIMPL.update(CustomerDAOIMPL.java:12)
+	at lk.ijse.ventacorebackend.bo.custom.impl.CustomerBOIMPL.updateCustomer(CustomerBOIMPL.java:43)
+	at lk.ijse.ventacorebackend.controller.CustomerController.doPut(CustomerController.java:75)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+16:57:09.047 [http-nio-8080-exec-3] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+16:57:09.047 [http-nio-8080-exec-2] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+16:57:09.061 [http-nio-8080-exec-4] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+16:58:50.758 [http-nio-8080-exec-9] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+16:58:50.758 [http-nio-8080-exec-8] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+16:58:50.766 [http-nio-8080-exec-10] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+16:58:53.762 [http-nio-8080-exec-1] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+16:58:53.768 [http-nio-8080-exec-2] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+16:58:53.776 [http-nio-8080-exec-3] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              17:42:36.775 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.OrderController - Order Controller Initialized
+17:42:36.779 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.CustomerController - Customer Controller Initialized
+17:42:36.780 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.ItemController - Item Controller Initialized
+17:42:53.738 [http-nio-8080-exec-2] INFO  l.i.ventacorebackend.db.DbConnection - Initializing DB connection
+17:42:54.210 [http-nio-8080-exec-2] DEBUG l.i.ventacorebackend.db.DbConnection - Connection Initialized: 638523347, URL=jdbc:mysql://localhost:3306/ventaCore?createDatabaseIfNotExist=true, MySQL Connector/J
+17:42:54.301 [http-nio-8080-exec-3] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:42:54.301 [http-nio-8080-exec-1] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:42:54.306 [http-nio-8080-exec-2] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:42:54.314 [http-nio-8080-exec-4] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:42:54.318 [http-nio-8080-exec-5] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:42:54.318 [http-nio-8080-exec-6] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:42:54.318 [http-nio-8080-exec-7] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:43:06.906 [http-nio-8080-exec-8] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:43:06.932 [http-nio-8080-exec-10] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:43:06.932 [http-nio-8080-exec-9] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:48:20.033 [http-nio-8080-exec-7] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:48:22.558 [http-nio-8080-exec-6] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:48:34.458 [http-nio-8080-exec-8] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:48:34.458 [http-nio-8080-exec-5] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:48:34.464 [http-nio-8080-exec-10] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:48:34.484 [http-nio-8080-exec-9] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:48:34.502 [http-nio-8080-exec-1] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:48:34.506 [http-nio-8080-exec-4] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:48:34.506 [http-nio-8080-exec-3] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:48:36.913 [http-nio-8080-exec-2] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:48:36.936 [http-nio-8080-exec-7] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:48:36.937 [http-nio-8080-exec-6] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:48:40.106 [http-nio-8080-exec-8] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:48:42.327 [http-nio-8080-exec-5] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:48:44.795 [http-nio-8080-exec-10] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:48:44.797 [http-nio-8080-exec-9] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:48:44.804 [http-nio-8080-exec-1] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:48:44.830 [http-nio-8080-exec-3] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:48:44.839 [http-nio-8080-exec-2] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:48:44.840 [http-nio-8080-exec-3] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:48:44.839 [http-nio-8080-exec-4] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:48:50.198 [http-nio-8080-exec-6] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:48:50.220 [http-nio-8080-exec-5] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:48:50.221 [http-nio-8080-exec-8] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:48:55.128 [http-nio-8080-exec-10] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:48:57.886 [http-nio-8080-exec-9] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:49:02.191 [http-nio-8080-exec-1] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:49:02.197 [http-nio-8080-exec-3] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:49:02.200 [http-nio-8080-exec-2] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:49:02.247 [http-nio-8080-exec-4] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:49:02.252 [http-nio-8080-exec-7] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:49:02.255 [http-nio-8080-exec-6] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:49:02.258 [http-nio-8080-exec-4] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:51:54.275 [http-nio-8080-exec-9] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:51:54.275 [http-nio-8080-exec-1] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:51:54.277 [http-nio-8080-exec-3] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:51:54.313 [http-nio-8080-exec-2] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:51:54.319 [http-nio-8080-exec-4] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:51:54.319 [http-nio-8080-exec-6] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:51:54.319 [http-nio-8080-exec-7] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:52:00.824 [http-nio-8080-exec-5] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:52:00.824 [http-nio-8080-exec-10] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:52:00.826 [http-nio-8080-exec-8] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:52:00.858 [http-nio-8080-exec-9] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:52:00.860 [http-nio-8080-exec-1] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:52:00.874 [http-nio-8080-exec-2] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:52:00.877 [http-nio-8080-exec-3] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:52:09.928 [http-nio-8080-exec-7] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:52:09.928 [http-nio-8080-exec-6] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:52:09.930 [http-nio-8080-exec-4] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:52:09.964 [http-nio-8080-exec-5] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:52:09.965 [http-nio-8080-exec-10] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:52:09.965 [http-nio-8080-exec-9] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:52:09.966 [http-nio-8080-exec-8] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:52:11.319 [http-nio-8080-exec-1] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:52:11.324 [http-nio-8080-exec-2] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:52:11.326 [http-nio-8080-exec-3] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:52:11.353 [http-nio-8080-exec-6] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:52:11.362 [http-nio-8080-exec-7] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:52:11.366 [http-nio-8080-exec-5] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:52:11.366 [http-nio-8080-exec-4] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:52:16.008 [http-nio-8080-exec-10] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:52:16.008 [http-nio-8080-exec-9] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:52:16.009 [http-nio-8080-exec-8] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:52:16.034 [http-nio-8080-exec-1] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:52:16.048 [http-nio-8080-exec-2] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:52:16.048 [http-nio-8080-exec-3] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:52:16.055 [http-nio-8080-exec-6] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:52:18.508 [http-nio-8080-exec-7] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:52:18.511 [http-nio-8080-exec-4] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:52:18.522 [http-nio-8080-exec-5] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:52:18.554 [http-nio-8080-exec-10] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:52:18.571 [http-nio-8080-exec-9] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:52:18.573 [http-nio-8080-exec-1] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:52:18.574 [http-nio-8080-exec-8] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:52:19.901 [http-nio-8080-exec-3] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:52:19.901 [http-nio-8080-exec-2] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:52:19.902 [http-nio-8080-exec-6] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:52:19.930 [http-nio-8080-exec-7] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:52:19.939 [http-nio-8080-exec-4] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:52:19.946 [http-nio-8080-exec-10] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:52:19.946 [http-nio-8080-exec-5] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:52:23.594 [http-nio-8080-exec-1] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:52:23.595 [http-nio-8080-exec-9] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:52:23.599 [http-nio-8080-exec-8] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:52:23.619 [http-nio-8080-exec-3] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:52:23.621 [http-nio-8080-exec-6] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:52:23.621 [http-nio-8080-exec-2] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:52:23.621 [http-nio-8080-exec-7] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:52:25.433 [http-nio-8080-exec-4] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:52:25.434 [http-nio-8080-exec-5] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:52:25.436 [http-nio-8080-exec-10] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:52:25.469 [http-nio-8080-exec-9] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:52:25.483 [http-nio-8080-exec-1] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:52:25.488 [http-nio-8080-exec-8] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:52:25.490 [http-nio-8080-exec-3] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:52:50.050 [http-nio-8080-exec-10] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:52:50.051 [http-nio-8080-exec-5] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:52:50.057 [http-nio-8080-exec-9] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:52:50.076 [http-nio-8080-exec-1] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:52:50.085 [http-nio-8080-exec-8] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:52:50.101 [http-nio-8080-exec-6] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:52:50.101 [http-nio-8080-exec-3] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:52:58.740 [http-nio-8080-exec-4] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:52:58.742 [http-nio-8080-exec-2] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:52:58.742 [http-nio-8080-exec-7] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:52:58.774 [http-nio-8080-exec-10] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:52:58.777 [http-nio-8080-exec-1] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:52:58.781 [http-nio-8080-exec-9] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:52:58.783 [http-nio-8080-exec-5] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:53:03.202 [http-nio-8080-exec-8] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:53:03.221 [http-nio-8080-exec-6] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:53:03.221 [http-nio-8080-exec-3] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:54:11.014 [http-nio-8080-exec-1] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:54:11.033 [http-nio-8080-exec-9] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:54:11.034 [http-nio-8080-exec-5] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:54:11.041 [http-nio-8080-exec-8] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:54:11.047 [http-nio-8080-exec-6] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:54:11.048 [http-nio-8080-exec-3] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:54:11.049 [http-nio-8080-exec-8] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:54:14.485 [http-nio-8080-exec-7] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:54:14.485 [http-nio-8080-exec-10] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:54:14.485 [http-nio-8080-exec-4] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:54:14.496 [http-nio-8080-exec-2] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:54:14.496 [http-nio-8080-exec-1] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:54:14.501 [http-nio-8080-exec-2] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:54:14.501 [http-nio-8080-exec-9] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:54:18.517 [http-nio-8080-exec-5] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:54:18.534 [http-nio-8080-exec-3] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:54:18.535 [http-nio-8080-exec-8] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:54:34.653 [http-nio-8080-exec-7] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:54:34.654 [http-nio-8080-exec-1] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:54:34.655 [http-nio-8080-exec-10] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:54:34.700 [http-nio-8080-exec-2] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:54:34.712 [http-nio-8080-exec-9] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:54:34.712 [http-nio-8080-exec-3] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:54:34.713 [http-nio-8080-exec-5] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:54:37.116 [http-nio-8080-exec-8] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:54:37.131 [http-nio-8080-exec-6] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:54:37.135 [http-nio-8080-exec-4] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:54:54.352 [http-nio-8080-exec-7] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:54:57.167 [http-nio-8080-exec-1] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:55:46.142 [http-nio-8080-exec-5] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:55:46.142 [http-nio-8080-exec-3] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:55:46.142 [http-nio-8080-exec-8] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:55:46.186 [http-nio-8080-exec-6] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:55:46.191 [http-nio-8080-exec-4] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:55:46.193 [http-nio-8080-exec-6] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:55:46.194 [http-nio-8080-exec-7] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:55:49.567 [http-nio-8080-exec-10] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:55:49.574 [http-nio-8080-exec-10] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:55:49.575 [http-nio-8080-exec-2] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:55:49.606 [http-nio-8080-exec-9] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:55:49.606 [http-nio-8080-exec-1] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:55:49.625 [http-nio-8080-exec-3] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:55:49.625 [http-nio-8080-exec-5] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:55:54.488 [http-nio-8080-exec-6] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:55:54.488 [http-nio-8080-exec-4] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:55:54.490 [http-nio-8080-exec-7] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:55:54.518 [http-nio-8080-exec-10] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:55:54.535 [http-nio-8080-exec-2] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:55:54.542 [http-nio-8080-exec-9] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:55:54.542 [http-nio-8080-exec-2] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:55:56.698 [http-nio-8080-exec-5] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:55:56.714 [http-nio-8080-exec-3] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:55:56.715 [http-nio-8080-exec-8] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:56:05.472 [http-nio-8080-exec-6] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:56:05.473 [http-nio-8080-exec-4] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:56:05.476 [http-nio-8080-exec-7] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:56:05.517 [http-nio-8080-exec-10] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:56:05.517 [http-nio-8080-exec-9] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:56:05.517 [http-nio-8080-exec-1] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:56:05.534 [http-nio-8080-exec-2] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:57:27.687 [http-nio-8080-exec-10] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:57:27.690 [http-nio-8080-exec-4] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:57:27.690 [http-nio-8080-exec-7] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:57:27.709 [http-nio-8080-exec-9] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:57:27.710 [http-nio-8080-exec-1] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:57:27.712 [http-nio-8080-exec-2] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:57:27.720 [http-nio-8080-exec-5] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:57:28.666 [http-nio-8080-exec-3] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:57:28.667 [http-nio-8080-exec-8] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:57:28.666 [http-nio-8080-exec-6] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:57:28.692 [http-nio-8080-exec-10] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:57:28.692 [http-nio-8080-exec-4] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:57:28.699 [http-nio-8080-exec-7] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:57:28.700 [http-nio-8080-exec-4] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:57:38.358 [http-nio-8080-exec-2] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:57:38.359 [http-nio-8080-exec-9] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:57:38.371 [http-nio-8080-exec-5] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:57:38.390 [http-nio-8080-exec-3] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:57:38.404 [http-nio-8080-exec-8] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:57:38.407 [http-nio-8080-exec-6] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:57:38.409 [http-nio-8080-exec-10] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:57:43.733 [http-nio-8080-exec-7] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:57:43.747 [http-nio-8080-exec-4] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:57:43.750 [http-nio-8080-exec-1] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:57:48.926 [http-nio-8080-exec-2] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+17:57:53.573 [http-nio-8080-exec-9] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:58:11.450 [http-nio-8080-exec-8] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:58:21.170 [http-nio-8080-exec-6] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:58:34.101 [http-nio-8080-exec-7] INFO  l.i.v.controller.OrderController - Order Saved Successfully
+17:58:34.114 [http-nio-8080-exec-4] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:58:34.134 [http-nio-8080-exec-9] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+17:58:34.144 [http-nio-8080-exec-5] INFO  l.i.v.controller.ItemController - Item Updated Successfully
+17:58:34.156 [http-nio-8080-exec-3] INFO  l.i.v.controller.ItemController - Item Updated Successfully
+17:58:34.157 [http-nio-8080-exec-6] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+17:58:34.157 [http-nio-8080-exec-8] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+18:50:02.912 [http-nio-8080-exec-2] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+18:50:02.915 [http-nio-8080-exec-9] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+18:50:02.916 [http-nio-8080-exec-5] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+18:50:02.928 [http-nio-8080-exec-8] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+18:50:02.929 [http-nio-8080-exec-3] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+18:50:02.937 [http-nio-8080-exec-6] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+18:50:02.938 [http-nio-8080-exec-10] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+18:51:38.144 [http-nio-8080-exec-5] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+18:51:38.144 [http-nio-8080-exec-2] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+18:51:38.144 [http-nio-8080-exec-9] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+18:51:38.157 [http-nio-8080-exec-3] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+18:51:38.157 [http-nio-8080-exec-8] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+18:51:38.164 [http-nio-8080-exec-6] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+18:51:38.166 [http-nio-8080-exec-10] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+18:51:41.687 [http-nio-8080-exec-7] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+18:51:41.689 [http-nio-8080-exec-4] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+18:51:41.692 [http-nio-8080-exec-1] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+18:51:41.721 [http-nio-8080-exec-5] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+18:51:41.749 [http-nio-8080-exec-9] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+18:51:41.749 [http-nio-8080-exec-2] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+18:51:41.749 [http-nio-8080-exec-3] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+18:51:43.812 [http-nio-8080-exec-8] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+18:51:43.812 [http-nio-8080-exec-6] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+18:51:43.813 [http-nio-8080-exec-10] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+18:51:43.859 [http-nio-8080-exec-5] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+18:51:43.859 [http-nio-8080-exec-7] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+18:51:43.859 [http-nio-8080-exec-4] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+18:51:43.859 [http-nio-8080-exec-1] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+18:51:46.112 [http-nio-8080-exec-2] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+18:51:46.112 [http-nio-8080-exec-9] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+18:51:46.113 [http-nio-8080-exec-3] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+18:51:46.153 [http-nio-8080-exec-6] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+18:51:46.153 [http-nio-8080-exec-8] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+18:51:46.157 [http-nio-8080-exec-7] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+18:51:46.158 [http-nio-8080-exec-10] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+18:51:52.273 [http-nio-8080-exec-5] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+18:51:52.273 [http-nio-8080-exec-4] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+18:51:52.274 [http-nio-8080-exec-1] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+18:51:52.307 [http-nio-8080-exec-2] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+18:51:52.315 [http-nio-8080-exec-9] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+18:51:52.316 [http-nio-8080-exec-3] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+18:51:52.321 [http-nio-8080-exec-6] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+18:52:03.814 [http-nio-8080-exec-8] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+18:52:03.831 [http-nio-8080-exec-7] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+18:52:03.834 [http-nio-8080-exec-10] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+18:56:47.599 [http-nio-8080-exec-9] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+18:56:49.817 [http-nio-8080-exec-3] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:03:47.861 [http-nio-8080-exec-8] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:24:06.038 [http-nio-8080-exec-10] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:24:28.556 [http-nio-8080-exec-2] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+19:24:28.570 [http-nio-8080-exec-4] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:24:28.572 [http-nio-8080-exec-1] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:24:38.724 [http-nio-8080-exec-9] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+19:24:38.737 [http-nio-8080-exec-3] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:24:38.738 [http-nio-8080-exec-6] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:25:13.554 [http-nio-8080-exec-10] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+19:25:13.569 [http-nio-8080-exec-5] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:25:13.571 [http-nio-8080-exec-2] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:25:18.648 [http-nio-8080-exec-4] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+19:25:18.662 [http-nio-8080-exec-1] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:25:18.666 [http-nio-8080-exec-9] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:26:30.783 [http-nio-8080-exec-8] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:26:30.785 [http-nio-8080-exec-7] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:26:30.783 [http-nio-8080-exec-10] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+19:26:30.812 [http-nio-8080-exec-5] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:26:30.815 [http-nio-8080-exec-2] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:26:30.819 [http-nio-8080-exec-2] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:26:30.820 [http-nio-8080-exec-4] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:26:52.297 [http-nio-8080-exec-7] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:26:52.298 [http-nio-8080-exec-5] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+19:26:52.300 [http-nio-8080-exec-10] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:26:52.308 [http-nio-8080-exec-1] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:26:52.309 [http-nio-8080-exec-2] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:26:52.311 [http-nio-8080-exec-4] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:26:52.311 [http-nio-8080-exec-1] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:27:11.941 [http-nio-8080-exec-6] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:27:11.944 [http-nio-8080-exec-3] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:27:11.947 [http-nio-8080-exec-8] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+19:27:11.980 [http-nio-8080-exec-7] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:27:11.993 [http-nio-8080-exec-2] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:27:11.994 [http-nio-8080-exec-10] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:27:11.995 [http-nio-8080-exec-5] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:27:14.111 [http-nio-8080-exec-1] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:27:14.111 [http-nio-8080-exec-4] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:27:14.113 [http-nio-8080-exec-9] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+19:27:14.145 [http-nio-8080-exec-6] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:27:14.165 [http-nio-8080-exec-3] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:27:14.168 [http-nio-8080-exec-8] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:27:14.169 [http-nio-8080-exec-7] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:27:16.175 [http-nio-8080-exec-2] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:27:16.178 [http-nio-8080-exec-10] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:27:16.178 [http-nio-8080-exec-5] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+19:27:16.225 [http-nio-8080-exec-1] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:27:16.236 [http-nio-8080-exec-4] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:27:16.237 [http-nio-8080-exec-9] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:27:16.240 [http-nio-8080-exec-6] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:27:21.450 [http-nio-8080-exec-3] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:27:21.461 [http-nio-8080-exec-7] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+19:27:21.461 [http-nio-8080-exec-8] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:27:21.487 [http-nio-8080-exec-2] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:27:21.488 [http-nio-8080-exec-10] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:27:21.493 [http-nio-8080-exec-1] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:27:21.495 [http-nio-8080-exec-5] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:27:24.999 [http-nio-8080-exec-9] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:27:24.999 [http-nio-8080-exec-4] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:27:24.999 [http-nio-8080-exec-6] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+19:27:25.034 [http-nio-8080-exec-3] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:27:25.039 [http-nio-8080-exec-7] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:27:25.042 [http-nio-8080-exec-2] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:27:25.042 [http-nio-8080-exec-8] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:27:29.464 [http-nio-8080-exec-1] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+19:27:29.481 [http-nio-8080-exec-5] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:27:29.482 [http-nio-8080-exec-9] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:41:08.074 [http-nio-8080-exec-7] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+19:41:08.093 [http-nio-8080-exec-2] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:41:08.097 [http-nio-8080-exec-8] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:42:25.821 [http-nio-8080-exec-9] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:42:25.821 [http-nio-8080-exec-5] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:42:25.821 [http-nio-8080-exec-6] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+19:42:25.862 [http-nio-8080-exec-3] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:42:25.862 [http-nio-8080-exec-4] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:42:25.863 [http-nio-8080-exec-7] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:42:25.866 [http-nio-8080-exec-2] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:43:53.327 [http-nio-8080-exec-5] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+19:43:53.343 [http-nio-8080-exec-6] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:43:53.345 [http-nio-8080-exec-3] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:56:36.947 [http-nio-8080-exec-2] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+19:56:36.959 [http-nio-8080-exec-8] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:56:36.961 [http-nio-8080-exec-10] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:58:04.309 [http-nio-8080-exec-5] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+19:58:04.333 [http-nio-8080-exec-6] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:58:04.334 [http-nio-8080-exec-3] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:58:23.337 [http-nio-8080-exec-2] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+19:58:23.337 [http-nio-8080-exec-4] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:58:23.337 [http-nio-8080-exec-7] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:58:23.375 [http-nio-8080-exec-8] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:58:23.381 [http-nio-8080-exec-9] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:58:23.381 [http-nio-8080-exec-10] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:58:23.386 [http-nio-8080-exec-1] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:59:05.456 [http-nio-8080-exec-2] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:59:05.456 [http-nio-8080-exec-4] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:59:05.456 [http-nio-8080-exec-7] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+19:59:05.550 [http-nio-8080-exec-8] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:59:05.553 [http-nio-8080-exec-1] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:59:05.553 [http-nio-8080-exec-10] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+19:59:05.553 [http-nio-8080-exec-9] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:59:52.320 [http-nio-8080-exec-2] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:59:52.353 [http-nio-8080-exec-8] INFO  l.i.v.controller.CustomerController - Customer Saved Successfully
+19:59:52.368 [http-nio-8080-exec-1] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+19:59:52.383 [http-nio-8080-exec-10] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+20:00:18.918 [http-nio-8080-exec-5] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+20:00:18.919 [http-nio-8080-exec-4] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+20:00:18.940 [http-nio-8080-exec-3] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+20:00:18.946 [http-nio-8080-exec-2] INFO  l.i.v.controller.CustomerController - Customer Updated Successfully
+20:00:18.962 [http-nio-8080-exec-7] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+20:00:40.023 [http-nio-8080-exec-9] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+20:00:40.023 [http-nio-8080-exec-10] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+20:00:40.049 [http-nio-8080-exec-4] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+20:00:40.064 [http-nio-8080-exec-6] INFO  l.i.v.controller.CustomerController - Customer Updated Successfully
+20:00:40.067 [http-nio-8080-exec-3] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+20:00:45.394 [http-nio-8080-exec-2] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+20:00:56.840 [http-nio-8080-exec-7] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+20:00:59.175 [http-nio-8080-exec-8] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+20:00:59.192 [http-nio-8080-exec-1] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+20:01:06.418 [http-nio-8080-exec-10] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+20:01:06.427 [http-nio-8080-exec-5] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+20:01:06.441 [http-nio-8080-exec-6] INFO  l.i.v.controller.CustomerController - Customer Deleted Successfully
+20:01:06.442 [http-nio-8080-exec-3] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+20:01:55.257 [http-nio-8080-exec-8] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+20:01:55.284 [http-nio-8080-exec-9] INFO  l.i.v.controller.ItemController - Item Saved Successfully
+20:01:55.297 [http-nio-8080-exec-10] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+20:01:55.309 [http-nio-8080-exec-4] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+20:02:15.056 [http-nio-8080-exec-5] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+20:02:15.057 [http-nio-8080-exec-6] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+20:02:15.077 [http-nio-8080-exec-2] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+20:02:15.091 [http-nio-8080-exec-7] INFO  l.i.v.controller.ItemController - Item Updated Successfully
+20:02:15.093 [http-nio-8080-exec-8] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+20:02:23.667 [http-nio-8080-exec-1] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+20:02:25.193 [http-nio-8080-exec-9] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+20:02:25.221 [http-nio-8080-exec-10] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+20:02:31.033 [http-nio-8080-exec-4] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+20:02:31.047 [http-nio-8080-exec-6] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+20:02:31.061 [http-nio-8080-exec-3] INFO  l.i.v.controller.ItemController - Item Deleted Successfully
+20:02:31.064 [http-nio-8080-exec-2] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+20:02:35.269 [http-nio-8080-exec-7] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+20:02:35.284 [http-nio-8080-exec-8] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+20:02:35.291 [http-nio-8080-exec-1] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+20:02:38.452 [http-nio-8080-exec-9] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+20:02:40.984 [http-nio-8080-exec-10] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+20:02:52.846 [http-nio-8080-exec-5] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+20:03:23.874 [http-nio-8080-exec-2] INFO  l.i.v.controller.OrderController - Order Saved Successfully
+20:03:23.888 [http-nio-8080-exec-7] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+20:03:23.918 [http-nio-8080-exec-1] INFO  l.i.v.controller.ItemController - Item Updated Successfully
+20:03:23.934 [http-nio-8080-exec-4] INFO  l.i.v.controller.ItemController - Item Updated Successfully
+20:03:23.937 [http-nio-8080-exec-10] INFO  l.i.v.controller.OrderController - All Orders Retrieved Successfully
+20:03:23.952 [http-nio-8080-exec-5] INFO  l.i.v.controller.CustomerController - All Customers Retrieved Successfully
+20:03:23.957 [http-nio-8080-exec-6] INFO  l.i.v.controller.ItemController - All Items Retrieved Successfully
+20:11:27.482 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.OrderController - Order Controller Initialized
+20:11:27.485 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.CustomerController - Customer Controller Initialized
+20:11:27.486 [RMI TCP Connection(2)-127.0.0.1] INFO  l.i.v.controller.ItemController - Item Controller Initialized

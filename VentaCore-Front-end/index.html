@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style.css" />
-    <link rel="icon" href="/assests/ico/SnapPosIcon.ico" />
+    <link rel="icon" href="/assets/ico/SnapPosIcon.ico" />
     <title>VentaCore</title>
   </head>
   <body>
@@ -15,11 +15,21 @@
     <div class="container">
       <nav class="sidebar">
         <ul>
-          <li><a href="#homePage" class="nav-link">Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-          <li><a href="#CustomerManage" class="nav-link">Customer</a></li>
-          <li><a href="#ItemManage" class="nav-link">Item&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
           <li>
-            <a href="#OrderManage" class="nav-link orderManageBtn">Orders&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a href="#homePage" class="nav-link"
+              >Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a
+            >
+          </li>
+          <li><a href="#CustomerManage" class="nav-link">Customer</a></li>
+          <li>
+            <a href="#ItemManage" class="nav-link"
+              >Item&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a
+            >
+          </li>
+          <li>
+            <a href="#OrderManage" class="nav-link orderManageBtn"
+              >Orders&nbsp;&nbsp;&nbsp;&nbsp;</a
+            >
           </li>
         </ul>
       </nav>
@@ -30,19 +40,19 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
-                  src="/assests/img/POS-Carousel-Image-1.png"
+                  src="/assets/img/POS-Carousel-Image-1.png"
                   alt="Food market image"
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="/assests/img/POS-Carousel-Image-2.png"
+                  src="/assets/img/POS-Carousel-Image-2.png"
                   alt="Customer in the market image"
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="/assests/img/POS-Carousel-Image-3.png"
+                  src="/assets/img/POS-Carousel-Image-3.png"
                   alt="Grocery items image"
                 />
               </div>
@@ -152,70 +162,63 @@
 
         <!------------------- Order section ------------------->
         <section id="OrderManage">
-          <div>
+          <div class="order-sections">
             <div class="includeDetails">
               <h1>Include Details</h1>
-              <div>
-                <form action="">
-                  <div>
-                    <div>
-                      <label for="">Order Id</label>
-                      <input type="text" class="orderId" />
-                    </div>
-                    <div>
-                      <label for="">Order Date</label>
-                      <input type="date" class="orderDate" />
-                    </div>
-                    <div>
-                      <label for="">Customer</label>
-                      <select class="customers" name="" id=""></select>
-                    </div>
-                    <div>
-                      <label for="">Customer ID</label>
-                      <input type="text" class="custId" />
-                    </div>
-                    <div>
-                      <label for="">Customer Name</label>
-                      <input type="text" class="custName" />
-                    </div>
-                    <div>
-                      <label for="">Customer Email</label>
-                      <input type="email" class="custSalary" />
-                    </div>
-                  </div>
-                  <div>
-                    <label for="">City</label>
-                    <input type="text" class="custAddress" />
-                  </div>
-                </form>
-              </div>
+              <form action="">
+                <div>
+                  <label for="">Order Id</label>
+                  <input type="text" class="orderId" />
+                </div>
+                <div>
+                  <label for="">Order Date</label>
+                  <input type="date" class="orderDate" />
+                </div>
+                <div>
+                  <label for="">Customer</label>
+                  <select class="customers" name="" id=""></select>
+                </div>
+                <div>
+                  <label for="">Customer ID</label>
+                  <input type="text" class="custId" />
+                </div>
+                <div>
+                  <label for="">Customer Name</label>
+                  <input type="text" class="custName" />
+                </div>
+                <div>
+                  <label for="">Customer Email</label>
+                  <input type="email" class="custSalary" />
+                </div>
+                <div>
+                  <label for="">City</label>
+                  <input type="text" class="custAddress" />
+                </div>
+              </form>
             </div>
+
             <div class="ItemSelect">
               <h1>Item Select</h1>
               <form action="">
                 <div>
-                  <div>
-                    <label for="">Item</label>
-                    <select name="" id="" class="itemCmb"></select>
-                  </div>
-                  <div>
-                    <label for="">Item Code</label>
-                    <input type="text" class="itemCode" />
-                  </div>
+                  <label for="">Item</label>
+                  <select name="" id="" class="itemCmb"></select>
                 </div>
                 <div>
-                  <div>
-                    <label for="">Item Name</label>
-                    <input type="text" class="itemName" />
-                  </div>
-                  <div>
-                    <label for="">Item Price</label>
-                    <input type="number" class="itemPrice" />
-                  </div>
-                  <div>
-                    <label for="">Item Qty</label>
-                    <input type="number" class="itemQty" />
-                  </div>
+                  <label for="">Item Code</label>
+                  <input type="text" class="itemCode" />
+                </div>
+                <div>
+                  <label for="">Item Name</label>
+                  <input type="text" class="itemName" />
+                </div>
+                <div>
+                  <label for="">Item Price</label>
+                  <input type="number" class="itemPrice" />
+                </div>
+                <div>
+                  <label for="">Item Qty</label>
+                  <input type="number" class="itemQty" />
                 </div>
                 <div>
                   <label for="">Order Qty</label>
@@ -226,6 +229,7 @@
                 <button class="addBtn">Add Item</button>
               </div>
             </div>
+
             <div class="TotalCal">
               <h1>Total : <span class="Total">00.0</span> Rs/=</h1>
               <h2>Sub Total : <span class="SubTotal">00.0</span> Rs/=</h2>
@@ -250,6 +254,7 @@
               </div>
             </div>
           </div>
+
           <div class="mainTable">
             <div class="table">
               <div>
@@ -271,9 +276,9 @@
     </footer>
     <script src="assets/js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="controller/IndexController.js"></script>
     <script type="module" src="controller/CustomerController.js"></script>
     <script type="module" src="controller/ItemController.js"></script>
     <script type="module" src="controller/OrderController.js"></script>
+    <script src="App.js"></script>
   </body>
 </html>
